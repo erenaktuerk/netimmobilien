@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/immoAnbieten.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Willkommen bei der Tumuratas-Group
+{% endblock title%}
+
+
+
+{% block content %}
+<!-- Diese Seite ist für Datenschutz-->
+
+<div class="suchauftragcontaiiner">
+    <div class="sub">
+        <h1>Vermarkte deine Immobilie.</h1>
+        <p>Völlig unverbindlich und kostenlos. Das Formular dient legdiglich zur Erstkontaktaufnahme</p>
+
+    </div>
+    <div class="formlist">
+        <form method="post" action="{% url 'properties:immobilieanbieten'%}">
+            {% csrf_token %}
+            {% if errors %}
+            <div class="formerrors">
+                {{errors}}
+            </div>
+            {% endif %}
+            <div class="formgrid">
+                <div class="fz pers-data">
+                    <h3>Persönliche Daten</h3>
+                </div>
+                <div class="fa">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.firstname.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.firstname}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fb">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.lastname.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.lastname}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fc">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.email.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.email}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fd">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.tel.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.tel}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fy pers-data">
+                    <h3>Objektdaten</h3>
+                </div>
+                <div class="fe">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.objecttype.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.objecttype}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ff">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.market_plan.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.market_plan}}
+                        </div>
+                    </div>
+                </div>
+                <div class="ff-livingsize">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.living_size.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.living_size}}
+                        </div>
+                    </div>
+                </div>
+                <div class="ff-groundsize">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.ground_size.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.ground_size}}
+                        </div>
+                    </div>
+                </div>
+                <div class="ff-buildingyear">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.building_year.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.building_year}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fh">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.total_size.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.total_size}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fn">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.street.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.street}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fi">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.housenumber.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.housenumber}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fk">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.city.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.city}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fj">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.postialcode.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.postialcode}}
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                
+
+                <div class="fl">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.country.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.country}}
+                        </div>
+                    </div>
+                </div>
+                <div class="fm">
+                    <div class="fielditem">
+                        <div class="fieldlabel">
+                            {{form.notification.label}}
+                        </div>
+                        <div class="fieldinput">
+                            {{form.notification}}
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                <!--
+                    <div class="recaptcha-ia">
+                        {{form.captcha}}
+                    </div>
+                -->
+
+         
+
+
+            <!--
+
+                <div class="recaptcha-ia">
+                {{recaptcha_form}}
+            </div>
+
+            -->
+            
+            
+            <div class="btn-area">
+                <div class="button">
+                    <input type="submit" class="bluebtn btn-1" value="Jetzt abschicken">
+                </div>
+            </div>
+            
+    </form>
+        
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}
+

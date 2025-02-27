@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Recherche
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/office.jpg'%})"></div>
+<div class="underhead">
+    <h1>Recherche</h1>
+</div>
+
+<div class="faccontent">
+    <h1>Das Fundament eines wirtschaftlichen Erfolgs.</h1>
+    <p>Unabhängig von der Größe, Ausrichtung oder Branche Ihres Unternehmens ist eine Marktanalyse und Marktrecherche unerlässlich. Wir sind spazialisert darin den Markt nach den passenden Metriken unserer Kunden zu filtern um daraufhin die optimalste Lösung zu finden.
+        Wir helfen Ihnen dabei Ihr Geschäft vorausschauender zu gestalten, damit Sie handlungsfähig auf sich verändernde Umweltbedingungen bleiben.
+
+    </p>
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+
+
+    </div>
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

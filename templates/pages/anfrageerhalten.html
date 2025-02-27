@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Facility Management
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/ffm.jpg'%})"></div>
+<div class="underhead">
+    <h1>Vielen dank.</h1>
+</div>
+
+<div class="faccontent">
+    <h1>Wir haben Ihre Anfrage erhalten.</h1>
+    <p style="text-align:center;">In kürze werden wir Kontakt zu Ihnen aufnehmen.</p>
+    <div class="btnlist">
+        <a href="{% url 'pages:aboutus'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr über uns >></a>
+        <a href="{% url 'pages:home'%}" class="tbtn-1 backgroundBlack">Zur Startseite >></a>
+    </div>
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}
+

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/pagesbasic.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/financing.css' %}">
+
+
+{% endblock cssfile %}
+
+{% block title %}
+Tumuratas Group Finanzierung
+{% endblock title%}
+
+
+
+{% block content %}
+<div class="pagehead" style="background-image:url({% static 'img/i1.jpeg'%})">
+    <div class="innerpagehead">
+        <h1>Finanzierung</h1>
+        <!--<p>Verwirkliche deine Träume. Zu günstigen Konditionen</p>-->
+    </div>
+</div>
+<div class="financevorteile">
+    <div class="fbox1 financebox">
+        <h1>Unser Service</h1>
+        <div class="fboxitem">
+            <div class="fboxitem-sym" style="background-image:url({% static 'img/blauerHaken.png'%})"></div>
+            <div class="fboxitem-txt">Kostenlose Beratung</div>
+
+        </div>
+        <div class="fboxitem">
+            <div class="fboxitem-sym" style="background-image:url({% static 'img/blauerHaken.png'%})"></div>
+            <div class="fboxitem-txt">Transparente Konditionen</div>
+
+        </div>
+        <div class="fboxitem">
+            <div class="fboxitem-sym" style="background-image:url({% static 'img/blauerHaken.png'%})"></div>
+            <div class="fboxitem-txt">Risikoanalyse</div>
+
+        </div>
+
+    </div>
+    <div class="fbox2 financebox">
+        <h1>Günstige Konditionen.</h1>
+        <div class="fboxitemtxt">
+            <p>Wir arbeiten eng mit unseren Finanzierungspartnern zusammen und sind in der Lage Ihnen lukrative Finanzierungsangebote zu vermitteln.</p>
+        </div>
+        
+        <a href="{% url 'pages:contact'%}" class="fastlink-a">Kontaktiere uns >></a>
+
+    </div>
+    <div class="fbox2txt" id="toptxt">
+        <h1>Damit Ihre Ziele greifbar sind.</h1>
+        <p>Aus einer großen Auswahl an Finanzierungsangeboten, filtern wir die für Sie optimale heraus. Dank unserer Marktanalysen und langjährigen Erfahrung kennen wir die Schwierigkeiten, die eine Finanzierung mit sich bringt. Unser Ziel ist es, 
+            mit Ihnen gemeinsam, die bestmögliche Option zu treffen.</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+{% block javascript %}
+
+
+{% endblock javascript %}
+

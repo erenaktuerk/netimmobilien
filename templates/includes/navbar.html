@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+  
+  <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search"/>
+        <input type="checkbox" id="show-menu"/>
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <a href="{% url 'pages:home' %}" id="logopic">
+          <div class="logo2" style="background-image:url({% static 'img/t1w.png'%})" ></div>
+        </a> 
+        <div class="content">        
+          <ul class="links">
+            <li>
+                <a href="{% url 'pages:home' %}" class="desktop-link">Home</a>
+
+                <input type="checkbox" id="show-home"/>
+                <label for="show-home">Home</label>
+                <ul>
+                  <li><a href="{% url 'pages:pause'%}">Über uns</a></li>
+                  <li><a href="{% url 'pages:service' %}">Unser Service</a></li>
+
+                  <li><a href="{% url 'pages:career' %}">Karriere</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Tippgeber</a></li>
+                  <li><a href="{% url 'pages:contact' %}">Kontakt</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="{% url 'properties:properties'%}" class="desktop-link">Immobilien</a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features">Immobilien</label>
+                <i></i>
+                <ul>
+                  <li><a href="{% url 'properties:properties'%}">Immobilienkatalog</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Immobilien anbieten</a></li>
+                  <li><a href="{% url 'pages:bewerten'%}">Immobilienbewertung</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Immobilien Suchauftrag anlegen</a></li>
+
+                  <li><a href="{% url 'pages:pause'%}">Immobilienverrentung</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Immobilinepflege</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Immobilien im türkischen Ausland</a></li>
+
+                </ul>
+              </li>
+              <li>
+                <a href="{% url 'pages:consulting' %}" class="desktop-link">Consulting</a>
+                <input type="checkbox" id="show-consulting">
+                <label for="show-consulting">Consulting</label>
+                <i></i>
+                <ul>
+                  <li><a href="{% url 'pages:consulting'%}">Beratung</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Marktanalyse</a></li>
+                  <li><a href="{% url 'pages:recherche'%}">Recherche</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Finanzierung</a>
+                <input type="checkbox" id="show-finance">
+                <label for="show-finance">Finanzierung</label>
+                <i></i>
+                <ul>
+                  <li><a href="{% url 'pages:finance'%}">Immobilienfinanzierung</a></li>
+                  <li><a href="{% url 'pages:pause'%}">Ratenkredit</a></li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link" class="desktop-link">Projektentwicklung</a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services">Projektentwicklung</label>
+                <ul>
+                  <li><a href="{% url 'pages:pause'%}">Projekt anbieten</a></li>
+                  <li><a href="{% url 'pages:grundstuckanbieten'%}">Grundstück anbieten</a></li>
+                  <li><a href="{% url 'pages:architekt'%}">Architekt / Ingineur</a></li>
+                  <li><a href="{% url 'pages:marketing' %}">Marketing</a></li>
+                </ul>
+              </li>
+              
+            <li>
+              <a href="{% url 'pages:build'%}" class="desktop-link">Bauen</a>
+              <input type="checkbox" id="show-bau">
+              <label for="show-bau">Bauen</label>
+              <i></i>
+              <ul>
+                <li><a href="{% url 'pages:sanieren'%}">Sanieren/Renovieren</a></li>
+                <li><a href="{% url 'pages:build'%}">Schlüsselfertig bauen</a></li>
+              </ul>
+            </li>
+              
+             
+          </ul>
+        </div>
+        <label style="opacity:0;"for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          {% csrf_token %}
+          <input type="text" placeholder="Wonach suchst du?" name="searchword" action={% url 'pages:search'%} required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+      </nav>
+    </div>
+
+    
+    <script>
+      let essentialCookies = document.getElementById("essential-cookies");
+      let allCookies = document.getElementById("accept-all");
+    
+      let cookieform = document.getElementById("cookieform");
+
+
+    
+      var cookiescreen = document.getElementById("cookiefield");
+    
+    
+      essentialCookies.addEventListener("click", function(){
+        cookiescreen.style.display="none";
+        cookieform.submit()
+        
+      });
+    
+      allCookies.addEventListener("click", function(){
+        cookiescreen.style.display="none";
+        cookieform.submit()
+
+        
+      });
+    
+    
+    
+    </script>
+
+</body>
+</html>

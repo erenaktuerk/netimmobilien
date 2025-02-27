@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Tippgeber
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/tippgeber.jpg'%})" id="tippgeberhead"></div>
+<div class="underhead">
+    <h1>Tippgeber</h1>
+    <p>Verdienen Sie attrative Provisionen. </p>
+</div>
+
+<div class="faccontent">
+    <h1>So einfach haben Sie noch nie Geld verdient.</h1>
+    <p>Sie erhalten bei Vermittlung und erfolgreicher Abwicklung eine Provision die sich an dem Wert der Immobilie bzw. des Projekts orientiert.
+        Als Tippgeber arbeiten Sie zu 100% remote, also wann und wo Sie wollen.
+        Kontaktiere Sie uns um alle Einzelheiten zu besprechen. Wir freuen uns auf Sie. 
+
+    </p>
+    <div class="btnlist">
+        <a href="{% url 'pages:aboutus'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr über uns >></a>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cssfile %}
+<!-- The filter styling is in form.css included -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <!-- we will delete home css later-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/search.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Tumuratas Immobilien
+{% endblock title%}
+
+{% block content%}
+<div class="search_container">
+
+    <div class="search-item">
+        <div class="searchpic" style="background-image:url({% static 'img/'%})"></div>
+        <div class="searchinfo">
+            <div class="s_objecttype">Gehd</div>
+            <div class="s_title">Schönes HAus hier</div>
+        </div>
+        
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+{% endblock content %}
+
+

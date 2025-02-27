@@ -1,0 +1,385 @@
+.detailheader {
+    height: 400px;
+    width: 100%;
+    margin-top: 70px;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.fastlinks2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.psym {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.txtheader {
+    padding: 80px 0px;
+    height: auto;
+}
+
+.filterheader {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+
+}
+
+.detailedInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.greycircle {
+    width: 5px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: grey;
+
+
+}
+
+
+.filterheader h1 {
+    margin-left: 50px;
+    font-size: 2.4em;
+    max-width: 520px;
+    line-height: 0.9em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.txtcontentgrid {
+    /*display: grid;
+    height: 160px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "db de dd"*/
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.da {
+    grid-area: da;
+}
+
+.de {
+    grid-area: de;
+}
+
+
+.db {
+    grid-area: db;
+}
+
+.dc {
+    grid-area: dc;
+}
+
+.dd {
+    grid-area: dd;
+}
+
+.phead {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+.pbodyfat {
+    font-size: 0.8em;
+}
+
+.griddetailitem {
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+}
+
+.sometxtfield {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.sometxtinner {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 120px 0px;
+    width: 85%;
+    max-width: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px #eaeaea solid;
+}
+
+
+.sometxtinner h1 {
+    max-width: 530px;
+    font-size: 1.1em;
+    margin: 15px;
+}
+
+
+.sometxtinner p {
+    max-width: 650px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    text-align: start;
+    color: #535353;
+}
+
+
+.formbox {
+    height: auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formlistdetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.piccont {
+    height: 540px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.piccont h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+.innerpiccont {
+    margin-left: 60px;
+    overflow-x: scroll;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.picitem {
+    width: 400px;
+    height: 390px;
+    margin-right: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+
+}
+
+.formbox h1 {
+    width: 450px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#propertyitem {
+    visibility: hidden;
+}
+
+.formbox p {
+
+    max-width: 540px;
+    text-align: center;
+
+}
+
+
+.formlabeld {
+    font-size: 0.8em;
+    color: #222222;
+
+}
+
+.forminputd input {
+    height: 44px;
+    width: 260px;
+    border-radius: 10px;
+    border: 1px solid #bababa;
+    box-shadow: 2px 2px 6px #eaeaea;
+    margin-bottom: 10px;
+}
+
+
+.recaptcha-ia label {
+    display: none;
+}
+
+.recaptcha-ia {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width:800px) {
+    .detailedInfos {
+        max-width: 90%;
+        font-size: 0.8em;
+        margin-bottom: 15px;
+
+
+    }
+
+
+    .filterheader h1 {
+        font-size: 1.7em;
+        max-width: 80%;
+        line-height: 1.2em;
+        margin: 30px 0px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .pbodyfat {
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
+
+@media(max-width:700px) {
+    .detailedInfos {
+        max-width: 90%;
+        font-size: 0.7em;
+        margin-bottom: 15px;
+    }
+
+    .txtcontentgrid {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .griddetailitem {
+        margin-bottom: 50px;
+    }
+
+    .txtheader {
+        padding: 80px 0px;
+    }
+
+    /*
+    .txtcontentgrid {
+        padding-bottom: 50px;
+        height: auto;
+        padding-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "db dd"
+            "de de";
+    }
+
+
+    */
+
+    .pbodyfat {
+        font-size: 0.8em;
+
+    }
+
+    .phead {
+        font-size: 0.7em;
+    }
+
+    .sometxtinner p {
+        max-width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 0.9em;
+        line-height: 1.6em;
+        color: #535353;
+    }
+
+
+    .phead {
+        font-size: 0.8em;
+    }
+
+    .pbodyfat {
+        font-size: 0.8em;
+    }
+
+    .formbox p {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aboutus.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/consulting.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Tumuratas Group Finanzierung
+{% endblock title%}
+
+{% block content %}
+<div class="aboutgridcontainer">
+    <div class="about_a abpic picmargin" style="background-image:url({% static 'img/house1.jpeg'%})"></div>
+    <div class="about_b abpic">
+        <h1 id="hu383">Der Partner an Ihrer Seite</h1>
+        <p>Unsere professionelle Dienstleistung umfasst das vollständige Spektrum des Corporate Real Estate Managements entlang der gesamten Wertschöpfungskette 
+            einer Unternehmensimmobilie. Je nach Bedarf des Kunden erbringen wir einzelne, mehrere oder sämtliche Leistungsbausteine aus diesem Spektrum.</br></br>
+            Dem betrieblichen Immobilienmanagement von Unternehmen, deren Kerngeschäft außerhalb der Immobilienwirtschaft angesiedelt ist, stehen wir mit spezialisiertem Wissen, 
+            Erfahrung und Manpower zur Seite. Wir verstehen die Philosophie der Unternehmen und die betrieblichen Notwendigkeiten in Bezug auf den eigenen Immobilienbestand. Wir kennen den Markt von Makro bis Mikro sowie die Besonderheiten der unterschiedlichen Lagen und Assetklassen.
+        </p>
+        <a class="tbtn-1 backgroundBlue" href="{% url 'pages:contact' %}">Jetzt kontaktieren >></a>
+    </div>
+    <div class="about_c abpic" id="initpic72" style="background-image:url({% static 'img/woman2.jpeg'%})"></div>
+    <div class="about_d abpic">
+        <h1 id="hn732">Vertrauen Sie auf Erfahrung.</h1>
+    </div>
+    <div class="about_e abpic" id="h7372" style="background-image:url({% static 'img/house22.jpeg'%})"></div>
+    <div class="about_f abpic picmargin" id="h4722" style="background-image:url({% static 'img/woman1.jpeg'%})"></div>
+    <div class="about_g abpic picmargin" id="h382" style="background-image:url({% static 'img/house30.jpeg'%})"></div>
+    <div class="about_i abpic">
+        <p>Entdecken Sie unser umfassendes Serviceangebot für Ihr Eigenheim oder Projektvorhaben. Wir begleiten Sie bei den wichtigen Schritten, von der Planung bis zum Erfolg.</p>
+    </div>
+</div>
+<div class="aboutusbox2">
+    <div class="box-aba bonsi" id="h723">
+        <h1>Tumuratas Group.</h1>
+        <p>Tumuratas Group ist einer der führenden Dienstleister im Bereich Immobilienvermittlung im Großraum Frankfurt a.M. Seit rund 15 Jahren bieten wir Ihnen Sicherheit und kompletten Rundum-Service bei Kauf, Verkauf und Vermietung von Immobilien aller Art.
+        </p>
+        <a  class="tbtn-1 backgroundBlue" href="{% url 'pages:contact' %}">Jetzt kontaktieren</a>
+    </div>
+    <div class="box-abb bonsib" id="list32">
+        <div class="listitem">
+            <div class="lisym">
+                <div class="innerlistsym" style="background-image:url({% static 'img/hakensym.png'%})"></div>
+            </div>
+            <div class="listtxt">
+                Immobilien
+            </div>
+        </div>
+        <div class="listitem">
+            <div class="lisym" >
+                <div class="innerlistsym" style="background-image:url({% static 'img/hakensym.png'%})"></div>
+            </div>
+            <div class="listtxt">
+                Consulting
+            </div>
+        </div>
+        <div class="listitem">
+            <div class="lisym" >
+                <div class="innerlistsym" style="background-image:url({% static 'img/hakensym.png'%})"></div>
+            </div>
+            <div class="listtxt">
+                Finanzierung
+            </div>
+        </div>
+    </div>
+
+
+    
+</div>
+<div class="videosection">
+    <div class="video-container">
+      <video height="350px" autoplay loop muted>
+          <source src="{% static 'videos/tgshort.mp4'%}" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascript %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+    toggleActions: "restart none none none",
+    });   
+
+
+    console.log("Willkommen bei der Tumuratas Group.");
+    // This is the YumaBag Text here
+    gsap.from("#hu383", {
+        scrollTrigger: ".about_b",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: 220,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#hn732", {
+        scrollTrigger: ".about_d",
+        toggleActions: "restart none none none",
+        duration: 1,
+        x: -220,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#initpic72", {
+        scrollTrigger: ".about_c",
+        toggleActions: "restart none none none",
+        duration: 1.6,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+    gsap.from("#h4722", {
+        scrollTrigger: ".about_f",
+        toggleActions: "restart none none none",
+        duration: 1.6,
+        opacity:0,
+        x:-300,
+        ease:"ease.in"
+
+    });
+
+    gsap.from("#h7372", {
+        scrollTrigger: ".about_e",
+        toggleActions: "restart none none none",
+        duration: 1.6,
+        x:-300,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+    gsap.from("#h382", {
+        scrollTrigger: ".about_g",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x:400,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+    gsap.from("#h723", {
+        scrollTrigger: ".aboutusbox2",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x:-100,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#list32", {
+        scrollTrigger: ".bonsib",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+
+</script>
+
+{% endblock javascript %}
+

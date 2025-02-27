@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cssfile %}
+    <!-- The filter styling is in form.css included -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <!-- we will delete home css later-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/properties.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Tumuratas Immobilien
+{% endblock title%}
+
+
+{% block content %}
+
+<div class="top-anker"></div>
+{% if properties_are_available %}
+    <div class="cont_prop2" style="background-image:url({% static 'img/buildings.jpg'%});background-size:cover;background-repeat:no-repeat;background-position:center;" >
+        <div class="filterdivproperty">
+            <div class="overlinebox2">
+                <h1>Immobilienkatalog</h1>
+            </div>
+            <div class="filter-div-cont2">
+                <form method="post" action="{% url 'properties:properties' %}">
+                    <div class="flexHori">
+                        {% csrf_token %}
+                        <div class="filter-item">
+                            <div class="filtername">Objektart</div>
+                            <select class="select" id="object-type-selection" name="objecttype">
+                                <option value="all" name="objekttypenalle">Alle Objektarten</option>
+                                {% for filteritem in filter_objecttype %}
+                                    <option value="{{filteritem}}">{{filteritem}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filtername">Vorhaben</div>
+                            <select class="select" id="plan-selection" name="plan">
+                                <option value="all" name="planalle">Alle Vorhaben</option>
+                                {% for filteritem in filter_plan%}
+                                    <option value="{{filteritem}}">{{filteritem}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filtername">Stadt</div>
+                            <select class="select" id="object-type-selection" name="city">
+                                <option value="all" name="cityall">Alle Städte</option>
+                                {% for filteritem in city %}
+                                    <option value="{{filteritem}}">{{filteritem}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filtername">Land</div>
+                            <select class="select" id="object-type-selection" name="country">
+                                <option value="all" name="countryall">Alle Länder</option>
+    
+                                {% for filteritem in filter_country %}
+                                    <option value="{{filteritem}}">{{filteritem}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="btnline">
+                            <input type="submit" class="btnsmall" value="Jetzt filtern"/>
+                        </div>
+                    </div>
+            </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="property-show" id="show">
+        {% for property in properties %}
+        <a href="{% url 'properties:property_detail' property.id %}">
+            <div class="property-item">
+                <div class="property-image" style="background-image:url({{ property.title_picture.url }})">
+                    <!--<img src="{{ property.title_picture.url }}" alt="{% static 'img/buildings.jpg' %}">-->
+                </div>
+                <div class="property-info">
+                    <div class="property-objecttype">
+                        {{property.object_type }}
+                    </div>
+                    <div class="propertytitle">{{property.property_title}}</div>
+                    <div class="property-adressinfo">
+                        <div class="adress-sym">{{property.country}}</div>
+                        <div class="city">{{property.postialcode}} {{property.city}}</div>
+                        <!--div class="street">{{property.street}}</div>-->
+                    </div>
+
+                    <div class="attributelist">
+                        {% if property.has_keller %}
+                        <div class="propertyattribute">
+                            Keller
+                        </div>
+                        {% endif %}
+                        {% if property.has_garage%}
+                        <div class="propertyattribute">Garage</div>
+                        {% endif %}
+                        {% if property.has_balkon %}
+                        <div class="propertyattribute">Balkon</div>
+                        {% endif %}
+
+                    </div>
+
+                </div>
+                <div class="shortitems">
+                    <div class="innershortitemlist">
+                        {% if property.amount_of_bathrooms %}
+                        <div class="shortitem-attribute">
+                            <div class="si-pic" style="background-image:url({% static 'img/badrooms.png' %})"></div>
+                            <div class="si-txt">{{property.amount_of_bathrooms}}</div>
+                        </div>
+                        {% endif %}
+                        {% if property.amount_of_bedrooms%}
+                        <div class="shortitem-attribute">
+                            <div class="si-pic" style="background-image:url({% static 'img/bedrooms.png' %})"></div>
+                            <div class="si-txt">{{property.amount_of_bedrooms}}</div>
+                        </div>
+                        {% endif %}
+                        <div class="shortitem-attribute">
+                            <div class="si-pic" style="background-image:url({% static 'img/gesamt.png' %})"></div>
+                            <div class="si-txt">{{property.total_area}} qm</div>
+                        </div>
+                        <div class="shortitem-attribute">
+                            <div class="si-pic" style="background-image:url({% static 'img/price.png' %})"></div>
+                            <div class="si-txt">{{property.price}} €</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </a>
+        
+        {% endfor %}
+    </div>
+    <script>
+
+        var pictures = document.getElementById("show");
+        // var pictures = document.getElementsByTagName(".img");
+        console.log(pictures);
+ 
+         console.log(pictures.childNodes.length);
+ 
+         for(let i = 0; i < pictures.length; i++){
+ 
+             console.log(pictures[i].style.backgroundImage);
+             console.log(pictures[i]);
+             console.log("lebenszeichen");
+ 
+ 
+         }
+
+    </script>
+{% else %}
+
+<div class="emptycont">
+
+    <p>In kürze ist unser Katalog für Sie verfügbar</p>
+
+</div>
+
+
+{% endif %}
+
+
+{% endblock content %}

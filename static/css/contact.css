@@ -1,0 +1,201 @@
+.contactbox1 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.contactheader {
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.formgrid {
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 1050px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 80px 80px 80px 240px 180px 200px auto;
+    grid-template-areas:
+        "ina inj"
+        "inb ink"
+        "inc inl"
+        "ind inf"
+        "ine ine"
+        "inq inq"
+        "captcha captcha"
+        "consub consub";
+
+}
+
+.inq {
+    grid-area: inq;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirmationbox p {
+    font-size: 0.7em;
+    color: #626262;
+    font-weight: 400;
+    margin-left: 50px;
+    max-width: 490px;
+}
+
+.inpf {
+    grid-area: inf;
+}
+
+.inpj {
+    grid-area: inj;
+}
+
+.inpk {
+    grid-area: ink;
+}
+
+.inpl {
+    grid-area: inl;
+}
+
+.inpa {
+    grid-area: ina;
+}
+
+.inpb {
+    grid-area: inb;
+}
+
+.inpc {
+    grid-area: inc;
+}
+
+.inpd {
+    grid-area: ind;
+}
+
+.inpe {
+    grid-area: ine;
+}
+
+.inputlabel {
+    font-size: 0.8em;
+}
+
+.inputfieldcont {
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.inputfieldcont input,
+.inputfieldcont select {
+    height: 38px;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px #EFEFEF;
+}
+
+
+#captcha label {
+    display: none;
+}
+
+#captcha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
+}
+
+#captcha form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.consub {
+    display: flex;
+    grid-area: consub;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.submitbtn {
+    color: white;
+}
+
+
+@media(max-width:960px) {
+
+    .formgrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .consub {
+        margin-top: 50px;
+    }
+
+    .inputfieldcont {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .inputfieldcont input {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inq {
+        margin-top: 40px;
+    }
+
+    .confirmbox p {
+        font-size: 0.6em;
+        max-width: 400px;
+    }
+
+
+
+
+}

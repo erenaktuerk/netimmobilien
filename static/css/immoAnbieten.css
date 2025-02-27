@@ -1,0 +1,316 @@
+.suchauftragcontaiiner {
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub {
+    margin-top: 40px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub h1 {
+    font-weight: 600;
+    font-size: 1.9em;
+    margin-bottom: 15px;
+}
+
+.sub p {
+    font-weight: 400;
+    width: 80%;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.formlist {
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 55px;
+}
+
+
+.fielditem {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+
+.fieldinput input {
+    height: 40px;
+    width: 270px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #C1C1C1;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.fieldinput select {
+    height: 40px;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+}
+
+
+.fieldlabel {
+    font-size: 0.8em;
+    margin-bottom: 2px;
+}
+
+
+.formgrid {
+    display: grid;
+    width: 95%;
+    height: auto;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 80px 80px 80px 80px 90px 80px 80px 240px;
+    grid-template-areas:
+        "fy fy fy fy fy fy"
+        "fe fe ff ff ff-buildingyear ff-buildingyear"
+        "fh fh ff-groundsize ff-groundsize ff-livingsize ff-livingsize"
+        "fn fn fn fi fi fi"
+        "fj fj fk fk fl fl"
+
+        "fz fz fz fz fz fz"
+        "fa fa fa fb fb fb"
+        "fc fc fc fd fd fd"
+        "fm fm fm fm fm fm";
+}
+
+
+
+.btn-area {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.ff-buildingyear {
+    grid-area: ff-buildingyear;
+}
+
+.ff-livingsize {
+    grid-area: ff-livingsize;
+}
+
+.ff-groundsize {
+    grid-area: ff-groundsize;
+}
+
+
+.fy,
+.fz {
+    grid-area: fy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fz {
+    grid-area: fz;
+}
+
+.fa {
+    grid-area: fa;
+}
+
+.fb {
+    grid-area: fb;
+}
+
+.fc {
+    grid-area: fc;
+}
+
+.fd {
+    grid-area: fd;
+}
+
+.fe {
+    grid-area: fe;
+}
+
+.ff {
+    grid-area: ff;
+}
+
+.fg {
+    grid-area: fg;
+}
+
+.fh {
+    grid-area: fh;
+}
+
+.fi {
+    grid-area: fi;
+}
+
+.fj {
+    grid-area: fj;
+}
+
+.fl {
+    grid-area: fl;
+}
+
+.fm {
+    grid-area: fm;
+}
+
+.fn {
+    grid-area: fn;
+}
+
+.fk {
+    grid-area: fk;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -70px;
+}
+
+.checkboxes {
+    height: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-area input {
+    width: 180px;
+    height: 47px;
+    border: 0px solid;
+    border-radius: 400px;
+    background-color: #0068E2;
+
+
+}
+
+.btn2:hover {
+    transition: 350ms all ease-in;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+.recaptcha-ia label {
+    display: none;
+}
+
+.recaptcha-ia {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width:890px) {
+
+    .fielditem {
+
+        height: auto;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .fieldlabel {
+        font-size: 0.7em;
+        margin-bottom: 2px;
+    }
+
+    .formgrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .fieldinput {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+@media(max-width:780px) {
+
+    .formgrid {
+        width: 100%;
+        height: auto;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto 300px;
+        grid-template-areas:
+            "fa"
+            "fb"
+            "fc"
+            "fd"
+            "fe"
+            "ff"
+            "fh"
+            "fn"
+            "fi"
+            "fj"
+            "fm"
+            "fk"
+            "fl";
+    }
+
+    .sub h1 {
+        font-size: 1.6em;
+    }
+
+    .sub p {
+        font-weight: 400;
+        width: 80%;
+        font-size: 0.9em;
+
+    }
+
+    .label {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+}

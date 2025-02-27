@@ -1,0 +1,206 @@
+.fachead {
+    height: 460px;
+    width: 100%;
+    margin-top: 70px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spontangrid {
+    display: grid;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "sga sgb";
+}
+
+.gridpart-a {
+    grid-area: sga;
+}
+
+.gridpart-b {
+    grid-area: sgb;
+}
+
+
+
+.underhead {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.underhead h1 {
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.underhead p {
+    margin-left: 30px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+#tippgeberhead {
+    background-position: center;
+}
+
+.faccontent {
+    height: auto;
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    margin-left: auto;
+}
+
+.facboxpic {
+    width: 90%;
+    max-width: 800px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#secondfac {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -60px;
+}
+
+#secondfac h2 {
+    margin-bottom: 20px;
+}
+
+
+#horizontal {
+    max-width: 620px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faccontent h1 {
+    font-size: 2.5em;
+    width: 90%;
+    max-width: 600px;
+    line-height: 0.9em;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+
+.faccontent p {
+    max-width: 650px;
+    text-align: start;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 35px;
+    line-height: 1.5em;
+}
+
+#faclist {
+    margin-left: 25px;
+}
+
+#secondfac {
+    margin-top: 50px;
+}
+
+@media(max-width:880px) {
+
+
+
+    .underhead h1 {
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-left: 30px;
+    }
+
+    .underhead p {
+        margin-left: 30px;
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+
+    .faccontent h1 {
+        font-size: 2.2em;
+        width: 80%;
+        margin-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .faccontent p {
+        text-align: start;
+        font-size: 1em;
+        font-weight: 400;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .faccontent {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+}
+
+@media(max-width:800px) {
+
+    #secondfac {
+        margin-top: 25px;
+    }
+
+    .spontangrid {
+        display: grid;
+        width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "sga"
+            "sgb";
+    }
+
+    .faccontent {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .faccontent h1 {
+        font-size: 1.8em;
+
+    }
+
+
+
+}

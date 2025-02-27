@@ -1,0 +1,380 @@
+.consultgrid {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 170px 170px 340px;
+    grid-template-areas:
+        "csa csb"
+        "csa csb"
+        "csc csb";
+}
+
+.csa {
+    grid-area: csa;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+#p36367,
+#p372 {
+    line-height: 1.4em;
+    margin-bottom: 45px;
+}
+
+.csa h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 0.9em;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.csc p {
+    margin-bottom: 20px;
+    max-width: 540px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+
+.csc p {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.csb {
+    grid-area: csb;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.csc {
+    grid-area: csc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.consultbox2 {
+    background-color: #070707;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.c2txt {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.c2sympic {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+}
+
+.c2txt h1 {
+    line-height: 1em;
+    margin-bottom: 25px;
+    font-size: 3.5em;
+}
+
+.c2txt p {
+    font-size: 1.4em;
+}
+
+.c2sym {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.c2symitem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c2symtxt {
+    margin-top: 15px;
+    font-size: 0.9em;
+    max-width: 180px;
+    text-align: center;
+}
+
+.consultbox3 {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 650px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "cb3list cb3txt";
+}
+
+.lisym {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.innerlistsym {
+    width: 14px;
+    height: 14px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cb3txt {
+    grid-area: cb3txt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.listitem {
+    width: 300px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EDEDED;
+
+
+
+}
+
+
+
+.cb3txt h1 {
+    font-weight: 800;
+    font-size: 3.5em;
+    line-height: 0.9em;
+    max-width: 550px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.cb3txt p {
+    max-width: 560px;
+    text-align: start;
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.cb3list {
+    grid-area: cb3list;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:860px) {
+
+    .consultgrid {
+        display: grid;
+        margin-top: 90px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px 450px 350px;
+        grid-template-areas:
+            "csa"
+            "csb"
+            "csc";
+    }
+
+    .csa {
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .csc {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    .csa h1 {
+        font-size: 1.9em;
+    }
+
+    .c2txt h1 {
+        font-size: 1.9em;
+    }
+
+    .c2txt p {
+        font-size: 1.2em;
+    }
+
+    .csa {
+        grid-area: csa;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+
+    }
+
+    .csb {
+        grid-area: csb;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .csc {
+        grid-area: csc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .csc p {
+        font-size: 1.2em;
+    }
+
+    .c2txt {
+        max-width: 80%;
+    }
+
+
+    .consultbox3 {
+        height: auto;
+        width: 100%;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+        grid-template-rows: 330px 380px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "cb3txt"
+            "cb3list";
+    }
+
+    .cb3txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-bottom: 70px;
+
+    }
+
+    .cb3txt h1 {
+        max-width: 80%;
+        font-size: 2.5em;
+
+    }
+
+    .cb3txt p {
+        max-width: 80%;
+        font-size: 1.2em;
+    }
+
+
+    .lisym {
+        width: 24px;
+        height: 24px;
+    }
+
+    .innerlistsym {
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .listitem {
+        width: 330px;
+        height: 76px;
+    }
+
+
+    .listtxt {
+        font-size: 0.9em;
+    }
+
+
+    .c2symtxt {
+        font-size: 0.7em;
+        max-width: 140px;
+    }
+
+
+
+    .c2sympic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .c2symtxt {
+        font-size: 0.7em;
+    }
+
+
+}

@@ -1,0 +1,133 @@
+.servicecont {
+    margin-top: 70px;
+    height: auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 570px 570px 570px 570px;
+    background-color: white;
+    grid-template-areas:
+        "sa1 sa2"
+        "sa3 sa4"
+        "sa5 sa6"
+        "sa7 sa7";
+}
+
+.sa7 {
+    grid-area: sa7;
+}
+
+#sa7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicearea {
+    margin: 5px;
+    border-radius: 6px;
+    background-color: #181818;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+.innerservicearea {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
+.servicearea h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+
+.servicearea p {
+    margin-bottom: 25px;
+    max-width: 540px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 1.3em;
+}
+
+
+.servicepicitem {
+    height: 130px;
+    width: 130px;
+}
+
+
+.contactbox {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+@media(max-width:1020px) {
+
+    .servicearea h1 {
+
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+
+    .servicearea p {
+        line-height: 1.7em;
+        font-size: 1em;
+    }
+
+    .servicearea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3px;
+    }
+
+
+    .servicecont {
+
+        margin-top: 70px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px 500px;
+        grid-template-areas:
+            "sa1"
+            "sa2"
+            "sa3"
+            "sa4"
+            "sa5"
+            "sa6"
+            "sa7";
+    }
+
+    .servicearea h1 {
+        font-size: 1.7em;
+        margin-top: 16px;
+    }
+
+    .innerservicearea {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

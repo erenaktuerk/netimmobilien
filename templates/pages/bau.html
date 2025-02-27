@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pagesbasic.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/financing.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bau.css' %}">
+{% endblock cssfile %}
+
+{% block title %}Bau - NetImmobilien{% endblock title%}
+
+{% block content %}
+<div class="pagehead" style="background-image:url({% static 'img/i1.jpeg'%})">
+    <div class="innerpagehead">
+        <h1>Bauen</h1>
+        <!--<p>Verwirkliche deine Träume. Zu günstigen Konditionen</p>-->
+    </div>
+</div>
+<div class="baucontent">
+    <div class="baucont1">
+        <h1 id="h37110">Wir bauen, wie Sie es sich vorstellen.</h1>
+        <p id="p3551">Wir bauen Immobilien, die durch ihre nachhaltige Qualität Maßstäbe setzen. Beharrlichkeit bei der Realisierung der optimalen Lösung zeichnet uns aus. Wir sind erst zufrieden, wenn auch das letzte Detail unseren Ansprüchen genügt.</p>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite">Jetzt kontaktieren >></a>
+
+    </div>
+    <div class="baucont2">
+        <div id="b322" class="baucircle" style="background-image:url({% static 'img/bau1.jpg'%})"></div>
+        <div id="b32233" class="baucircle" style="background-image:url({% static 'img/bau2.jpg'%})"></div>
+        <div id="b1232" class="baucircle" style="background-image:url({% static 'img/bau3.jpg'%})"></div>
+    </div>
+</div>
+
+<div class="baucont3">
+    <div class="baucontpic" style="background-image:url({% static 'img/ffm.jpg'%})"></div>
+    <div class="baucontub">
+        <h1>Wir schaffen Werte.</h1>
+    </div>
+    <div class="bauconttxt">
+        <p>Wir bauen, sanieren und renovieren energieeffizient und nachhaltig. 
+            Wir stehen für eine enge und transparente Zusammenarbeit mit unseren Kunden, effiziente Heiztechnik und Baustoffe, die für Ihre Gesundheit am besten sind.
+        </p>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite">Kontaktiere uns >></a>
+    </div>
+</div>
+<div class="story pdnmax" style="padding-bottom:90px;">
+    <div class="storyitem">
+
+        <h1>Weil es mehr als ein Haus ist.</h1>
+        <p>
+            Der Hausbau will wohlüberlegt sein, denn schließlich investiert man nicht oft oder sogar nur einmal in seinem Leben solch hohe Geldsummen. Damit auf dem Weg dorthin keine Fehler passieren, 
+            ist es wichtig, dass alles genau durchdacht ist und akribisch geplant wird. Unser Anspruch lautet deswegen:
+        </p>
+        <div class="rowlist">
+            <div class="horizontalitembox">
+                <div class="point">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem">höchste Sorgfalt in Sachen Planung, Materialqualität und Kundenservice</div>
+            </div>
+            <div class="horizontalitembox">
+                <div class="point">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem">Verwendung von innovativen Technologien, Methoden und Materialien</div>
+            </div>
+            <div class="horizontalitembox">
+                <div class="point">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem">finanzielle Solidität und Sicherheit durch unsere Auszeichnungen</div>
+            </div>
+            <div class="horizontalitembox">
+                <div class="point">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem">individuelle Planung durch unsere hochqualifizierten Architekten und Bauingenieure</div>
+            </div>
+            <div class="horizontalitembox">
+                <div class="point">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem">kompetente Betreuung während- und auch nach der Bauphase</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block javascript %}
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+    toggleActions: "restart none none none",
+    });   
+
+
+    gsap.from("#h37110", {
+        scrollTrigger: ".baucont1",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: 320,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#p3551", {
+        scrollTrigger: ".baucont1",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: -320,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+    //
+    gsap.from("#b322", {
+        scrollTrigger: ".baucont2",
+        toggleActions: "restart none none none",
+        duration: .7,
+        x: -200,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#b32233", {
+        scrollTrigger: ".baucont2",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: 500,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#b1232", {
+        scrollTrigger: ".baucont2",
+        toggleActions: "restart none none none",
+        duration: .7,
+        x: 620,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    //+++++++++++
+
+
+    
+</script>
+
+
+{% endblock javascript %}
+

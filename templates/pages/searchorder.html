@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/searchorder.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Willkommen bei der Tumuratas-Group
+{% endblock title%}
+
+
+
+{% block content %}
+<div class="searchhead" style="background-image:url({% static 'img/i1.jpg'%})">
+    <div class="innersearchhead">
+        <h1>Nach was für einer Immobilie suchst du?</h1>
+    </div>
+
+</div>
+<div class="socontent">
+    <h1>Dein Suchauftrag.</h1>
+    <p>Teile uns mit nach was für einer Immobilie du suchst. 
+        Wir werden daraufhin eine umfangreiche Suche anlegen und dich daraufhin informieren.</p>
+        <div class="soformlist">
+            <form method="post" action="{% url 'properties:searchorder' %}">
+            {% csrf_token %}
+
+            {% if errors %}
+            <div class="formerrors">
+                {{errors}}
+            </div>
+            {% endif %}
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.firstname.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.firstname}}
+                </div>
+            </div>
+
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.lastname.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.lastname}}
+                </div>
+
+            </div>
+
+
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.email.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.email}}
+                </div>
+
+            </div>
+
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.tel.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.tel}}
+                </div>
+            </div>
+
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.search_for_objecttype.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.search_for_objecttype}}
+                </div>
+            </div>
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.searched_city.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.searched_city}}
+                </div>
+            </div>
+
+
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.searched_postialcode.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.searched_postialcode}}
+                </div>
+            </div>
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.searched_city.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.searched_city}}
+                </div>
+            </div>
+            <div class="soformitem">
+                <div class="soformlabel">
+                    {{ form.distance.label }}
+                </div>
+                <div class="soforminput">
+                    {{form.distance}}
+                </div>
+            </div>
+            <div class="recaptcha-ia">
+                <!--{{recaptcha_form}}-->
+                {{form.captcha}}
+            </div>
+            
+            <input type="submit" class="tbtn-1 backgroundBlue inputbtn"value="Anfragen abschicken"/>
+        </form>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}
+

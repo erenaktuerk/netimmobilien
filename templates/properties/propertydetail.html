@@ -1,0 +1,305 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/propertydetail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/slider.css' %}">
+
+
+{% endblock cssfile %}
+
+{% block title %}
+Immobilie
+{% endblock title%}
+
+
+
+{% block content %}
+<div class="detailheader" style="background-image:url({{property.title_picture.url}})">
+    
+</div>
+<div class="txtheader">
+<div class="filterheader">
+        <h1>{{property.property_title}}</h1>
+</div>
+<div class="detailedInfos">
+    <div class="detailitem">Zum {{property.plan}}</div>
+    <div class="greycircle"></div>
+    <div class="detailitem">{{property.object_type}}</div>
+    <div class="greycircle"></div>
+    <div class="detailitem">{{property.postialcode}}</div>
+    <div class="greycircle"></div>
+    <div class="detailitem">{{property.city}}</div>
+</div>
+<div class="txtcontentgrid">
+    <!--<div class="da griddetailitem">
+        <div class="gridhead">
+            <div class="psym"></div>
+           <div class="phead">Adresse</div>
+        </div>
+        <p class="pbody">{{property.street}}<p>
+        <p class="pbody">{{property.postialcode}} {{property.city}}<p>
+        <p class="pbody">{{property.country}}<p>
+    </div>-->
+    <div class="db griddetailitem">
+        <div class="gridhead">
+            <div class="psym" style="background-image:url({% static 'img/gesamt.png' %})"></div>
+           <div class="phead">Gesamtfläche</div>
+        </div>
+        <p class="pbodyfat">{{property.total_area}} qm</p>
+    </div>
+    {% if property.area_to_live %}
+        <div class="de griddetailitem">
+            <div class="gridhead">
+                <div class="psym" style="background-image:url({% static 'img/wohn.png' %})"></div>
+            <div class="phead">Wohnfläche</div>
+            </div>
+            <p class="pbodyfat">{{property.area_to_live}} qm</p>
+        </div>
+    {% endif %}
+    <div class="dd griddetailitem">
+        <div class="gridhead">
+            <div class="psym" style="background-image:url({% static 'img/price.png' %})"></div>
+           <div class="phead">Preis</div>
+        </div>
+        <p class="pbodyfat">{{property.price}} €</p>
+    </div>
+    {% if property.amount_of_bedrooms %}
+    <div class="griddetailitem">
+        <div class="gridhead">
+            <div class="psym" style="background-image:url({% static 'img/bedrooms.png' %})"></div>
+           <div class="phead">Schlafzimmer</div>
+        </div>
+        <p class="pbodyfat">{{property.amount_of_bedrooms}}</p>
+    </div>
+    {% endif %}
+    {% if property.amount_of_bathrooms %}
+    <div class="griddetailitem">
+        <div class="gridhead">
+            <div class="psym" style="background-image:url({% static 'img/badrooms.png' %})"></div>
+           <div class="phead">Badezimmer</div>
+        </div>
+        <p class="pbodyfat">{{property.amount_of_bathrooms}}</p>
+    </div>
+    {% endif %}
+</div>
+
+</div>
+{% if pics %}
+        <div class="banner">
+            <div class="imgBx" id="imgBox">
+                {% for pic in pics %}
+                    <img src="{{pic.image.url}}">
+                {% endfor %}
+            </div>
+            
+            <ul class="controls">
+                <li onclick="prevSlide();" style="margin-bottom:5px"></li>
+                <li onclick="nextSlide();"></li>
+            </ul>
+        </div>
+
+
+
+<script>
+
+    /**
+    Here we handle the Slider 
+    **/
+    const imgBx = document.querySelector('.imgBx');
+    const slides = imgBx.getElementsByTagName('img');
+
+    //const contentBx = document.querySelector('.contentBx');
+    //const slidesTxt = contentBx.getElementsByTagName('div');
+
+    var i = 0;
+    var j = 0;
+
+
+    function nextSlide(){
+        slides[i].classList.remove('active');
+        i = (i+1) % slides.length;
+        slides[i].classList.add('active');
+        console.log("next one");
+    }
+
+    function prevSlide(){
+        slides[i].classList.remove('active');
+        i = (i-1 + slides.length) % slides.length;
+        slides[i].classList.add('active');
+        console.log("prev one");
+        
+    }
+
+
+    
+
+
+
+    var imgbox = document.getElementById("imgBox");
+    var firstPic = imgbox.firstElementChild;
+
+    //add class to first pic
+    function handleActiveImg(){
+        if(firstPic != undefined){
+            firstPic.classList.add("active");
+
+        }
+    }
+
+    handleActiveImg();
+    console.log(imgbox.children.length)
+    console.log(firstPic.classList)
+  
+
+
+
+</script>
+
+
+{% endif %}
+{% if property.object_description %}
+<div class="sometxtfield">
+    <div class="sometxtinner">
+        <h1>Objektbeschreibung</h1>
+        <p>{{property.object_description}}
+        </p>
+    </div>
+</div>
+{% endif %}
+{% if property.equipment_description %}
+
+<div class="sometxtfield">
+    <div class="sometxtinner">
+        <h1>Die Austattung</h1>
+        <p>{{property.equipment_description}}
+        </p>
+    </div>
+</div>
+
+{% endif %}
+
+{% if property.location_description %}
+<div class="sometxtfield">
+    <div class="sometxtinner">
+        <h1>Lagebeschreibung</h1>
+        <p>{{property.location_description}}
+        </p>
+    </div>
+</div>
+
+{% endif %}
+
+{% if property.other_description %}
+
+<div class="sometxtfield">
+    <div class="sometxtinner">
+        <h1>Sonstiges</h1>
+        <p>{{property.other_description}}</p>
+    </div>
+</div>
+
+{% endif %}
+
+<div class="formbox">
+    <h1>Sind Sie interessiert ?</h1>
+    <p>Füllen Sie jetzt folgendes Formular aus. Wir melden uns bei Ihnen.</p>
+    <form method="post" action="{% url 'properties:property_detail' property.id %}">
+        {% csrf_token %}
+        {% if errors %}
+            <div class="formerrors">
+                {{errors}}
+            </div>
+            {% endif %}
+        <div class="formlistdetail">
+
+            <div class="formitemd" id="propertyitem">
+                <div class="formlabeld">
+                    {{form.property.label}}
+                </div>
+                <div class="forminputd">
+                    {{form.property}}
+                </div>
+            </div>
+
+            <div class="formitemd">
+                <div class="formlabeld">
+                    {{form.firstname.label}}
+                </div>
+                <div class="forminputd">
+                    {{form.firstname}}
+                </div>
+            </div>
+
+            <div class="formitemd">
+                <div class="formlabeld">
+                    {{form.lastname.label}}
+                </div>
+                <div class="forminputd">
+                    {{form.lastname}}
+                </div>
+            </div>
+
+            <div class="formitemd">
+                <div class="formlabeld">
+                    {{form.email.label}}
+                </div>
+                <div class="forminputd">
+                    {{form.email}}
+                </div>
+            </div>
+
+            <div class="formitemd">
+                <div class="formlabeld">
+                    {{form.tel.label}}
+                </div>
+                <div class="forminputd">
+                    {{form.tel}}
+                </div>
+            </div>
+
+        </div>
+        <div class="recaptcha-ia">
+            <!--{{recaptcha_form}}-->
+            {{form.captcha}}
+        </div>
+        <div class="fastlinks2">
+            <input type="submit" class="tbtn-1 backgroundBlue centered" value="Abschicken"/>
+        </div>
+    </form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+<script>
+
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+    toggleActions: "restart none none none",
+    });   
+
+    // This is the YumaBag Text here
+    gsap.from("#hub1home", {
+        scrollTrigger: "#einfbox",
+        toggleActions: "play none none none",
+        duration: 1.2,
+        ease: "sine.out",
+        x: -120,
+        opacity:0,
+
+    });
+
+</script>
+{% endblock javascriptblock %}
+

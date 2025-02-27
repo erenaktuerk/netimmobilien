@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <!-- in story.css sind die stichpunkte gespeichert-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Projekt anbieten
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/ffm.jpg'%})"></div>
+<div class="underhead">
+    <h1>Projekte.</h1>
+</div>
+
+<div class="faccontent">
+    <h1>Entwickeln Sie mit uns lukrative Projekte.</h1>
+    <p>Eine unserer Stärken liegt in der Umfassenden und interdisziplinäre Beratung sowie Unterstützung bei der Projektentwicklung von Immobilien.
+        Wir sind Dreh- und Ankerpunkt für:
+    </p>
+    <div class="rowlist" id="faclist">
+        <div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Architekten</div>
+        </div>
+        <div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Asset Manager</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Banken</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Bauherren</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Bauträger</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Bauunternehmen</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Eigentümer</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Immobilienverwalter</div>
+        </div><div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Investor</div>
+        </div>
+        <div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Makler</div>
+        </div>
+        <div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Projektentwickler</div>
+        </div>
+        <div class="horizontalitembox">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Tragwerksplaner</div>
+        </div>
+        
+    </div>
+
+</div>
+
+<div class="faccontent">
+    <h1>Lieber nichts vergessen.</h1>
+    <p>Aufgaben und Herausforderungen bei der Projektentwicklung von Immobilien sind vielfältig, ebenso die zu beachtenden Vorschriften und Regelungen der Kommunen und Städte. 
+        Diese werden in den letzten Jahren aktiver und sind im Rahmen ihrer Stadtplanung restriktiver. 
+        Von allen in Immobilienprojekten beteiligten Gruppen und Personen benötigt es in der Projektentwicklung daher mehr Wissen, umsichtiges Agieren und geplantes Vorgehen.
+    </p>
+</div>
+
+<div class="faccontent">
+    <h1>
+        Das was uns auszeichnet.
+    </h1>
+    <p>
+        Wir fokussieren uns nicht lediglich auf die Erfüllung von Einzelaufgaben, sondern haben den Blick für das Ganze und die Zusammenhänge. Zusammenhänge in rechtlicher Sicht, 
+        in Bezug auf Verfahren und Prozesse und nicht zuletzt auf die der Befindlichkeiten einzelner Interessensgruppen. 
+        An jeder Projektentwicklung sind eine Vielzahl von Akteuren beteiligt Architekten, Bauherren, Eigentümer und nicht zuletzt natürlich Behörden.
+
+    </p>
+    <p>
+        Als jahrelang erfahrener Partner für Projektentwickler, Behörden und alle anderen Beteiligten von Immobilienprojekten wissen wir, wann was wie zu tun ist und sorgen dafür, 
+        dass Ihre Visionen schneller, günstiger und zielführender Realität werden.
+
+    </p>
+
+
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+    
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

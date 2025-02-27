@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Immobilienbewertung - Tumuratas Group
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/house22.jpeg'%})"></div>
+<div class="underhead">
+    <h1>Immobilienbewertung</h1>
+</div>
+
+<div class="faccontent">
+    <h1>Was ist Ihre Immobilie wert?</h1>
+    <p>Wegen der großen Veränderungen fragen sich deshalb viele: Was ist meine Immobilie wert? Die Wertermittlung gestaltet sich oft nicht einfach. Sie können andere Immobilienanzeigen in Ihrer Region heranziehen. Dieser Vergleich ist aber oft sehr ungenau. 
+        Jedes Haus und jede Wohnung hat unterschiedliche Merkmale und manchmal machen kleine Entfernungen von zwei Straßen große Unterschiede bei dem zu erzielenden Preis aus.
+
+    </p>
+    
+
+
+</div>
+<div class="faccontent">
+    <h1>Wir ermitteln für Sie den aktuellen Marktwert Ihrer Immobilie.</h1>
+    <p>Hierbei gehen wir mehrere Wege, um den Preis möglichst detailliert zu ermitteln. 
+        Erfahren Sie schnell, kostenlos und unverbindlich den Marktwert Ihrer Immobilie. 
+        Für Sie als Eigentümer ist dies, unabhängig von einer aktuellen Verkaufsabsicht, hochinteressant.
+
+    </p>
+    <div class="btnlist">
+        <a href="{% url 'properties:immobilieanbieten'%}" class="tbtn-1 backgroundBlack">Zum Formular >></a>
+    </div>
+    
+    
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

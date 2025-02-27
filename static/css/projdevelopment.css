@@ -1,0 +1,178 @@
+.projbox1 {
+    height: 680px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-top: 70px;
+
+}
+
+.projbox1 h1 {
+    font-size: 3.8em;
+    font-weight: 900;
+    width: 80%;
+    max-width: 570px;
+    text-align: center;
+    line-height: 0.9em;
+    background: -webkit-linear-gradient(20deg, #FF3B00, #FF214B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projbox1 p {
+    margin-bottom: 10px;
+    color: #E0E0E0;
+}
+
+.projbox2 {
+    height: auto;
+    width: 90%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projbox2 h1 {
+    max-width: 500px;
+    line-height: 0.9em;
+    margin-bottom: 20px;
+    font-size: 3.8em;
+    font-weight: 900;
+    width: 80%;
+    max-width: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projbox2 p {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.symbolitems {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.projsymitem {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.projsympic {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projsymtxt {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.projbox3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thirdfac{
+    margin: 90px 0px;
+}
+
+
+.archipicture {
+    width: 500px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.projbox3 {
+    height: 180px;
+    width: 100%;
+    background-image: linear-gradient(120deg, #FF3B00, #FF214B);
+}
+
+
+@media(max-width:880px) {
+
+    .projbox1 {
+        height: 600px;
+        background-attachment: unset;
+    }
+
+    .projbox1 h1 {
+        font-size: 2.5em;
+        max-width: 80%;
+        text-align: center;
+
+    }
+
+    .projbox2 h1 {
+        font-size: 1.8em;
+        max-width: 80%;
+        margin: 25px;
+        text-align: center;
+
+
+    }
+
+    .projbox2 p {
+        font-size: 0.9em;
+        max-width: 90%;
+        margin: 20px;
+        text-align: center;
+
+    }
+
+    .archipicture {
+        width: 340px;
+    }
+
+    .projsympic {
+        width: 50px;
+        height: 50px;
+    }
+
+    .projsymtxt {
+        font-size: 0.8em;
+    }
+
+    .projbox3 {
+        height: 120px;
+    }
+
+
+
+}

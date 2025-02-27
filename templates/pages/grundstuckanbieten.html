@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <!-- in story.css sind die stichpunkte gespeichert-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Projekt anbieten
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/house30.jpeg'%})"></div>
+<div class="underhead">
+    <h1>Grundstücke anbieten.</h1>
+</div>
+
+
+<div class="faccontent">
+    <h1>
+        Wir suchen momentan nach Grundstücken.
+    </h1>
+    <p>
+        Sind Sie selbst verkaufswilliger Grundstückseigentümer oder kennen Sie jemanden der sein Grundstück verkaufen will ? In beiden Fällen können Sie stark von uns profitieren. 
+        Wir sind auf den Kauf und Bebauung von Grundstücken jeder Art spezialisiert und freuen uns über jedes Angebot. Profitierne Sie von der aktuellen Marktlage und verkaufen oder vermitteln Sie jetzt.
+         Gerne besprechen wir die Einzelheiten bei einem persönlichen Gespräch.
+    </p>
+   
+
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+    
+
+</div>
+
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

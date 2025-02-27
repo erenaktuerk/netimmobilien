@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/service.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Service der Tumuratas Group
+{% endblock title%}
+
+
+
+{% block content %}
+
+<div class="servicecont">
+        <div class="sa1 servicearea" style="background-image:url({% static 'img/happy.jpeg'%})">
+            <div class="innerservicearea">
+                <h1>Consulting</h1>
+                <p>Wir bieten eine umfassende Beratung angesichts der steigenden 
+                    Komplexität des internationalen Immobilienmarkts an. Neben einer langfristigen strategischen Ausrichtung beinhaltet dies auch Finanzierungsfragen oder die Standortwahl.</p>
+                <a class="tbtn-1 backgroundBlue" href="{% url 'pages:consulting'%}">Mehr zum Thema >></a>
+            </div>
+
+        </div>
+    <div class="sa2 servicearea" style="background-image:url({% static 'img/bau2.jpg'%})">
+        <div class="innerservicearea">
+            <h1>Bauen</h1>
+            <p>Wir bauen Immobilien, die durch ihre nachhaltige Qualität Maßstäbe setzen. Beharrlichkeit bei der Realisierung der optimalen Lösung zeichnet uns aus. 
+                Wir sind erst zufrieden, wenn auch das letzte Detail unseren Ansprüchen genügt.</p>
+            <a class="tbtn-1 backgroundBlue" href="{% url 'pages:bau'%}">Mehr zum Thema >></a>
+        </div>
+    </div>
+    <div class="sa3 servicearea" style="background-image:url({% static 'img/house1.jpeg'%})">
+        <div class="innerservicearea">
+            <h1>Immobilien</h1>
+            <p>Der Kauf, Verkauf und Vermittlung von Immobilien gehört zu unserem Kernbereich.</p>
+            <a class="tbtn-1 backgroundBlue" href="{% url 'pages:bau'%}">Mehr zum Thema >></a>
+        </div>
+    </div>
+    <div class="sa4 servicearea" style="background-image:url({% static 'img/i1.jpg'%})">
+        <div class="innerservicearea">
+            <h1>Finanzierung</h1>
+            <p>Gerne vermitteln wir Ihnen einen Kredit um Ihre Wünsche und Projekte realisierbar zu machen. Wir legen hierbei viel Wert auf eine offene und transparente Zusammenarbeit.</p>
+            <a class="tbtn-1 backgroundBlue" href="{% url 'pages:bau'%}">Mehr zum Thema >></a>
+        </div>
+    </div>
+    <div class="sa5 servicearea" style="background-image:url({% static 'img/house22.jpeg'%})">
+        <div class="innerservicearea">
+            <h1>Immobilien Bewertung</h1>
+            <p>Unsere Experten bewerten kostenlos und unverbindlich Ihr Eigenheim.</p>
+            <a class="tbtn-1 backgroundBlue" href="{% url 'pages:bewerten'%}">Mehr zum Thema >></a>
+        </div>
+    </div>
+    <div class="sa6 servicearea" style="background-image:url({% static 'img/archi.jpeg'%})">
+        <div class="innerservicearea" >
+            <h1>Projektentwicklung</h1>
+            <p>Wir haben Jahrzehnte lange Erfahrung und Expertise in dem Bereich der Projektentwicklung. Starten Sie jetzt mit uns durch.</p>
+            <a class="tbtn-1 backgroundBlue" href="{% url 'pages:projektanbieten'%}">Mehr zum Thema >></a>
+        </div>
+    </div>
+    <div class="sa7 servicearea" id="sa7"style="background-image:url({% static 'img/facilitymanagement.jpg'%})">
+        <div class="innerservicearea" >
+            <h1>Facility Management</h1>
+            <p>Umfangreiche Pflege Ihrer Immobilie, mit allem was dazugehört. Fordern Sie jetzt ein Angebot an.</p>
+            <a class="tbtn-1 backgroundBlue" href="{% url 'pages:facilitymanagement'%}">Mehr zum Thema >></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}
+

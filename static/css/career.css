@@ -1,0 +1,42 @@
+.jobbox{
+    max-width: 1000px;
+    height: 460px;
+    width: 90%;
+    box-shadow: 1px 2px 7px #eaeaea;
+
+}
+
+#carcontent{
+    height: auto;
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+
+.jobboxheader{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+    background-color: #f7f7f7;
+}
+
+.columnname{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.jobs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 340px;
+
+}
+
+.jobs p{
+    font-size: 0.9em;
+}
+
+

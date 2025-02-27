@@ -1,0 +1,70 @@
+.stichproben {
+    padding: 40px 0px;
+}
+
+.winterf1 h3 {
+    font-weight: 500;
+    max-width: 540px;
+    text-align: center;
+
+
+}
+
+.winterf1 h4 {}
+
+.centeredtext {
+    text-align: center;
+}
+
+.winterf1 h1 {
+    line-height: 1.1em;
+    max-width: 580px;
+}
+
+#wf2 {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.txtfac {
+    max-width: 590px;
+    margin: 10px;
+    padding: 20px;
+    color: #181818;
+}
+
+.bolded {
+    font-weight: 600;
+}
+
+#hs1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#rd2 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+@media(max-width:850px) {
+    .txtfac {
+        font-size: 0.9em;
+        max-width: 90%;
+    }
+
+    .winterf1 h3 {
+        font-weight: 500;
+        font-size: 1.1em;
+        max-width: 85%;
+
+    }
+
+    .winterf1 h1 {
+        line-height: 1.1em;
+        max-width: 85%;
+        font-size: 2em;
+    }
+
+
+}

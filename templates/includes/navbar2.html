@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navbar2.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+    
+  <div class="wrappernav">
+      <nav>
+        <a href="{% url 'pages:home'%}">
+          <div class="logo2" style="background-image:url({% static 'img/t1b.png'%})"></div>
+        </a>
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_button menu-btn ">
+          <span class="menu-btn-burger"></span>
+        </label>
+        <uL>
+          <li class="expandable_li">
+            <input type="checkbox" id="product_checkbox">
+            <label for="product_checkbox">Home</label>
+            <ul class="dropdown">
+              <li><a href="{% url 'pages:service' %}">Service</a></li>
+              <li><a href="{% url 'pages:aboutus'%}">Über uns</a></li>
+              <li><a href="{% url 'pages:career' %}">Karriere</a></li>
+              <li><a href="{% url 'pages:tippgeber'%}">Tippgeber</a></li>
+              <li><a href="{% url 'pages:contact' %}">Kontakt</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <input type="checkbox" id="immo_checkbox">
+            <label for="immo_checkbox">Immobilien</label>
+            <ul class="dropdown">
+              <li><a href="{% url 'properties:properties'%}">Immobilienkatalog</a></li>
+              <li><a href="{% url 'pages:bewerten'%}">Immobilien bewerten</a></li>
+              <li><a href="{% url 'properties:searchorder'%}">Suchauftrag anlegen</a></li>
+              <li><a href="{% url 'properties:immobilieanbieten'%}">Anbieten</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <input type="checkbox" id="proj_checkbox">
+            <label for="proj_checkbox">Projektentwicklung</label>
+            <ul class="dropdown">
+              <li><a href="{% url 'pages:projektanbieten'%}">Projekt anbieten</a></li>
+              <li><a href="{% url 'pages:grundstuckanbieten'%}">Grundstück anbieten</a></li>
+              <li><a href="{% url 'pages:architekt'%}">Architekt / Ingineur</a></li>
+              <li><a href="{% url 'pages:marketing' %}">Marketing</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <input type="checkbox" id="cons_checkbox">
+            <label for="cons_checkbox">Consulting</label>
+            <ul class="dropdown">
+              <li><a href="{% url 'pages:consulting'%}">Beratung</a></li>
+              <li><a href="{% url 'pages:marktanalyse'%}">Marktanalyse</a></li>
+              <li><a href="{% url 'pages:recherche'%}">Recherche</a></li>
+            </ul>
+          </li>
+          <li class="expandable_li">
+            <input type="checkbox" id="bau_checkbox">
+            <label for="bau_checkbox">Bauen</label>
+            <ul class="dropdown">
+              <li><a href="{% url 'pages:sanieren'%}">Sanieren/Renovieren</a></li>
+              <li><a href="{% url 'pages:build'%}">Schlüsselfertig bauen</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'pages:finance'%}">Finanzierung</a></li>
+          <li><a href="{% url 'pages:facilitymanagement'%}">Facility</a></li>
+      </nav>
+  </div>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const respnavinput = document.querySelector('#toggle_button')
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+        if (!menuOpen) {
+            menuBtn.classList.add('open');
+            menuOpen = true;
+            respnavinput.check
+        } else {
+            menuBtn.classList.remove('open');
+            menuOpen = false;
+            respnavinput.uncheck
+        }
+    });
+  </script>
+
+</body>
+</html>

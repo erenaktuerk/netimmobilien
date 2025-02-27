@@ -1,0 +1,560 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden !important;
+
+}
+
+.formerrors {
+  background-color: beige;
+  padding: 30px;
+  margin: 20px;
+  height: 90px;
+  border-radius: 7px;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.cookiecontainer {
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 9999999999999;
+
+}
+
+.cookiebox {
+  padding: 30px 0px;
+  height: 160px;
+  background-color: #131313;
+  width: 100%;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "ctext cookiebuttons";
+}
+
+.btnc {
+  padding: 5px;
+  font-size: 0.8em;
+  color: black;
+  height: 50px;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+
+
+}
+
+.cbtn1 {
+  border: 2px solid white;
+  color: white;
+}
+
+.cbtn2 {
+  background-color: white;
+}
+
+.btnc:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 450ms;
+}
+
+.cookiebuttons {
+  grid-area: cookiebuttons;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.ctext {
+  grid-area: ctext;
+  color: #bababa;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.fullcont {
+  overflow-x: hidden;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.logo {
+  width: 280px;
+  height: 65px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.bottomlogo {
+  margin-bottom: 10px;
+}
+
+.mrgntop {
+  margin-top: 25px;
+}
+
+.bluebtn {
+  background-color: #0068E2;
+  color: white;
+}
+
+.btn {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
+  border-radius: 24px;
+  font-size: 0.8em;
+}
+
+.submitbtn {
+  width: 350px;
+  height: 52px;
+  background-color: #0068E2;
+  border: 0px solid grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whitebtn {
+  background-color: white;
+  color: black;
+}
+
+#essential-cookies {
+  color: white;
+}
+
+.top-anker {
+  height: 70px;
+}
+
+.fullcont {
+  overflow-x: hidden;
+}
+
+
+.footer {
+  width: 100%;
+  overflow-x: hidden;
+  height: auto;
+  background-image: linear-gradient(110deg, #011017, #031725);
+}
+
+.topfooter {
+  height: auto;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 190px 100px;
+  grid-template-areas:
+    "tf uf sf"
+    "socialf socialf socialf";
+}
+
+.fooitem2 {
+  width: 22px;
+  height: 22px;
+  margin: 12px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialfitems {
+  width: 120px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fooitem:hover,
+.fooitem2:hover {
+  opacity: 0.62;
+  transition: 360ms;
+  cursor: pointer;
+}
+
+.tumuratasf {
+  grid-area: tf;
+}
+
+.unternehmenf {
+  grid-area: uf;
+}
+
+.servicef {
+  grid-area: sf;
+}
+
+.socialf {
+  grid-area: socialf;
+}
+
+.tfline {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 1.9em;
+}
+
+
+.tbtn-1 {
+  width: 180px;
+  min-width: auto;
+  height: 44px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.7em;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 1px;
+  min-width: auto;
+  border: none;
+}
+
+.inputbtn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tbtn-1:hover {
+  cursor: pointer;
+  transition: 340ms all ease-in;
+  background-color: grey;
+}
+
+.marginRight40px {
+  margin-right: 40px;
+}
+
+.backgroundBlack {
+  background-color: #131313;
+  color: white;
+}
+
+.backgroundBlue {
+  background-color: #0062ff;
+  color: white;
+}
+
+.btnlist {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.backgroundWhite {
+  background-color: white;
+  color: #131313;
+}
+
+
+
+.lawpart {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px;
+  justify-content: space-between;
+}
+
+a .foobottomitem {
+  font-size: 0.8em;
+  color: #9A9A9A;
+}
+
+.rowline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1050px;
+  height: auto;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+  height: 80px;
+
+}
+
+.overfooitem {
+  color: white;
+  font-weight: 600;
+}
+
+.fooitem {
+  font-size: 0.9em;
+}
+
+.tfline a {
+  color: #DEDEDE;
+  text-decoration: none;
+}
+
+.socialfitems {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottomfooter {
+  height: 90px;
+  width: 90%;
+  max-width: 1050px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 15px;
+
+}
+
+.racinesignature {
+  font-size: 0.6em;
+  color: #AAAAAA;
+  font-weight: 300;
+
+}
+
+.racinedeux {
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+
+
+.partnerbox {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.partnerbox h1 {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.pbox {
+  width: 130px;
+  height: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px #bababa;
+
+}
+
+.innerpartnerbox {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#pbox3 {
+  background-size: contain;
+  background-color: white;
+
+}
+
+
+@media (max-width:870px) {
+
+
+
+
+  .cookiebox {
+    padding: 30px;
+    height: 160px;
+    background-color: #131313;
+    width: 100%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "ctext"
+      "cookiebuttons";
+  }
+
+  .ctext {
+    text-align: center;
+  }
+
+  .btnc {
+    padding: 5px;
+    font-size: 0.8em;
+    color: black;
+    height: 50px;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .tbtn-1 {
+    width: 165px;
+    height: 43px;
+    min-width: auto;
+    border-radius: 10px;
+
+    font-size: 0.6em;
+
+  }
+
+  .btn {
+    width: 170px;
+
+    height: 46px;
+    font-size: 0.8em;
+  }
+
+  .overfooitem {
+    font-size: 0.8em;
+  }
+
+  .fooitem {
+    font-size: 0.7em;
+  }
+
+
+  .topfooter {
+    height: auto;
+    margin-bottom: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 190px 100px;
+    grid-template-areas:
+      "tf uf"
+      "socialf sf";
+  }
+
+  .logo {
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .lawpart .foobottomitem {
+    font-size: 0.7em;
+  }
+
+  .innersearchhead h1 {
+    font-size: 1.7em;
+  }
+
+}
+
+@media(max-width:780px) {
+  .pbox {
+    width: 90px;
+    height: 50px;
+
+
+  }
+
+
+}
+
+@media(max-width:650px) {
+
+  .cookiebox {
+    padding: 100px 0px;
+    padding-bottom: 160px;
+    height: 140px;
+    background-color: #131313;
+
+  }
+
+  .tbtn-1 {
+    width: 165px;
+    min-width: auto;
+    height: 44px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.6em;
+
+  }
+
+
+}

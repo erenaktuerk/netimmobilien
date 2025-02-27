@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/winterdienst.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/immobilienverrentung.css' %}">
+
+
+
+{% endblock cssfile %}
+
+{% block title %}
+Immobilienverrentung - Tumuratas Group
+{% endblock title%}
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/buildings.jpg'%})"></div>
+<div class="underhead">
+    <h1>Immobilienverrentung</h1>
+</div>
+<div class="faccontent winterf1">
+    <h1>Eigenheim gegen Rente.</h1>
+    <h3>So funktioniert die Immobilienverrentung.</h3>
+    <div class="txtfac">
+        Viele Senioren befassen sich aus wirtschaftlichen oder gesundheitlichen Gründen mit Verkaufsabsichten, obwohl sie am liebsten in den eigenen vier Wänden wohnen bleiben würden. Mit einem Verkauf auf Rentenbasis lässt sich ein Auszug vermeiden.
+    </div>
+</div>
+<div class="faccontent winterf1">
+    <h3>Was bedeutet Immobilienrente?</h3>
+    <div class="txtfac">
+        Der Begriff Immobilienrente ist ein Oberbegriff für Leib- und Zeitrente. Im Kern geht es dabei um den Verkauf der Immobilie an einen Dritten. Als Gegenleistung wird eine monatliche Rente für eine festgelegte Laufzeit gezahlt und ein Wohnrecht eingeräumt. Bei der Leibrente sind Rente und Wohnrecht lebenslang, bei der Zeitrente verkürzt. Da die Bedarfssituationen der Seniorenhaushalte unterschiedlich sind, gehen Anbieter mittlerweile auch auf weitere persönliche Wünsche ein und bieten Paketlösungen an.
+    </div>
+</div>
+
+<div class="faccontent winterf1">
+    <h3>Um welche persönlichen Zusatzwünsche geht es?</h3>
+    <div class="txtfac" id="rententxt">
+        Beispiele, was im Verrentungspaket enthalten sein könnte und was kombinierbar ist:
+
+    </div>
+    <div class="stichproben rowlist" id="rentenlist">
+        <div class="horizontalitembox rentenitem" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Aufstockung des Haushaltsbudgets durch eine monatliche Zusatzrente</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Einmalzahlung, um Restschulden zu tilgen und eine monatliche Zusatzrente
+            </div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Einmalzahlung für Investitionen ins Gebäude und eine monatliche Zusatzrente
+            </div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Zusatzrente, um Pflegekosten für Ehepartner oder Angehörige zu finanzieren
+
+            </div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Einmalzahlung und eine monatliche Zusatzrente für Konsumwünsche
+
+            </div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Übernahme der Instandhaltungskosten des Gebäudes durch den Käufer</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Die Finanzierung finanzieller Wünsche über Banken scheidet häufig aus, da Banken an diese Altersgruppe oft keine Darlehen mehr vergeben.</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="faccontent winterf1">
+    <h3>Wer bietet Immobilienverrentungen an?
+    </h3>
+    <div class="txtfac">
+        Man unterscheidet zwischen sogenannten institutionellen Investoren, wie kirchliche Institutionen und Kapitalgesellschaften, sowie privaten Investoren. Die institutionellen Investoren verfügen über Organisationen mit geschultem Fachpersonal. Bei den privaten Investoren kann deren Qualifikation stark differieren. Ratsam ist, nur mit solchen Investoren einen Vertrag abzuschließen, die über eine erstklassige Bonität und Erfahrungen auf diesem Gebiet verfügen. Es geht um langfristige Zahlungsverpflichtungen, Zuverlässigkeit und Pünktlichkeit. Fragen Sie deshalb gezielt nach, wie lange der Investor schon auf diesem Gebiet tätig ist, wie er organisiert ist und wie kapitalkräftig er ist und holen Sie sich nach Möglichkeit Referenzen ein.    </div>
+</div>
+<div class="faccontent winterf1">
+    <h3>Wie sehen die vertraglichen Regelungen der Immobilienverrentung aus?
+    </h3>
+    <div class="txtfac">
+        Die Rechtsgrundlage der Immobilienverrentung ist ein notarieller Grundstückskaufvertrag. Darin werden alle Leistungen des Anbieters, wie zum Beispiel die monatliche Rente und eine eventuelle Einmalzahlung, vertraglich vereinbart. Als Sicherheit für die Senioren wird das unentgeltliche Wohnrecht (lebenslang oder zeitlich befristet) oder der Nießbrauch im Grundbuch an erster Rangstelle abgesichert. Für Ehepaare ist besonders wichtig, dass das Wohnrecht beim Tod eines Ehegatten Gültigkeit behält. Ein weiterer wichtiger Punkt ist, dass nicht verbrauchte Rentenguthaben bei Umzug - zum Beispiel in ein Alten- oder Pflegeheim - mitgenommen werden können. Bei vorzeitigem Todesfall sollte es an die Erben ausgezahlt werden.    </div>
+</div>
+
+
+<div class="faccontent winterf1">
+    <h3>Beratung, Kosten und Steuern
+    </h3>
+    <div class="txtfac">
+        Immobilienverrentung ist beratungsintensiv und setzt Erfahrungen und gute Kenntnisse in Erbschafts- und Familienfragen, sowie in der Immobilienbewertung voraus. Darauf und auf Qualifikationsnachweise des Beraters sollten Sie Wert legen. Zu einer guten Beratung gehört, dass Ihnen Alternativen aufgezeigt werden. Zum Beispiel, wie ist das Ergebnis bei einer Verrentung und wie ist es, wenn die Immobilie ganz normal verkauft wird und der Verkaufserlös in eine Ersatzimmobilie investiert wird? Wie wurden die Ergebnisse ermittelt?</br></br>
+        Die Kosten des Grundstückskaufvertrags (Grunderwerbsteuer, Notar und Grundbuchkosten) trägt der Käufer. War ein Makler beteiligt, sollte darauf geachtet werden, dass die Vermittlungsprovision ebenfalls vom Käufer getragen wird. Renten sind einkommensteuerpflichtig. Sie werden mit dem Ertragsanteil besteuert. Beim Ertragsanteil wird eine jährliche fiktive Miete angenommen, die sich an der ortsüblichen Vergleichsmiete der Immobilie orientiert.
+    </div>
+</div>
+
+
+{% endblock content %}
+
+{% block javascript %}
+
+{% endblock javascript %}

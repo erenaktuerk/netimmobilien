@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Marktanalyse
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/buildings.jpg'%})"></div>
+<div class="underhead">
+    <h1>Marktanalyse</h1>
+</div>
+
+<div class="faccontent">
+    <h1>Umfassende Analyse schafft optimale Voraussetzungen.</h1>
+    <p>
+        Ein gutes Investment basiert auf Marktkenntnis und erfolgsorientierter Entscheidungsfindung. Wir sind Ihr Immobilienberater, der Sie bei der Vermarktung, der Suche und Entwicklung Ihres Investments als auch in der Bewirtschaftung umfassend begleitet. Mit unserem Service bringen wir Sie Ihrem individuellen Ziel näher.
+        Ob auf der Suche nach Ihrem neuen Eigenheim oder als Kapitalanleger, profitieren Sie von Tumuratas Group. 
+    </p>
+</div>
+<div class="faccontent">
+    <h1>Bestandteile der Marktanalyse</h1>
+    <p>
+        Die Marktanalyse ist im Gegensatz zur Marktbeobachtung nur eine kurzfristige Darstellung der Marktsituation. Hierbei werden aktuelle Daten erhoben, die für strategische Entscheidungen herangezogen werden können. Zur Marktanalyse gehören insbesondere: Marktvolumen und Marktentwicklung (Wachsen, Stagnieren, Schrumpfen).Zusammen mit der Marktbeobachtung soll die Analyse Markttransparenz schaffen und eine fundierte Grundlage für die geschäftlichen Aktivitäten des untersuchenden Unternehmens bieten. Sowohl für den Marketingplan als auch für die Formulierung der operativen und strategischen Maßnahmen und Ziele ist eine Marktanalyse unerlässlich. Aber auch für das unternehmensübergreifende Benchmarketing und für die Erstellung von Businessplänen im Rahmen von Existenzgründungen sind Marktanalysen unerlässlich.
+    </p>
+    <div class="quelle">Quelle Check24.de</div>
+</div>
+<div class="faccontent">
+    <h1>Untersuchungsfelder der Marktanalyse.</h1>
+    <p>
+        Die Marktanalyse kann sich auf verschiedene Untersuchungsfelder beziehen. So ist beispielsweise für Werkzeuge, Rohstoffe, Energie und Vorfabrikate eine methodische Analyse der Beschaffungsmärkte inklusive des Arbeitsmarktes erforderlich. Ein weiteres Untersuchungsfeld sind die Finanzmärkte wie etwa Kapital-, Devisen- und Geldmärkte. Für Haupt- und Nebenerzeugnisse sowie Abfallprodukte kann zudem eine Marktanalyse der Absatzmärkte durchgeführt werden. Zu unterscheiden ist hierbei zwischen der Produktanalyse und der Absatzanalyse. Bei der Produktanalyse wird das Produkt hinsichtlich seiner Leistungsfähigkeit und Beschaffenheit untersucht. Des Weiteren wird analysiert, wie die 
+        Selbstkosten gestaltet und ob das Produkt und dessen Verpackung marktgerecht ausgeformt sind. Die Absatzanalyse im Sinne einer Bedarfsuntersuchung bezieht sich auf die Nachfrage nach dem Produkt. Darüber hinaus ist zu ermitteln, wie es derzeit um den Wettbewerb bestellt ist und wie sich die Wettbewerbssituation voraussichtlich entwickeln wird. Dieser Schritt wird auch als Konkurrenzanalyse bezeichnet. Ein weiteres Untersuchungsfeld im Rahmen der Absatzanalyse ist die Untersuchung der kommerziell und technisch optimalen Absatzwege
+    </p>
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/career.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Karriere - NetImmobilien
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/woman2.jpeg'%})"></div>
+<div class="underhead">
+    <h1>Karriere.</h1>
+</div>
+
+<div class="faccontent" id="carcontent">
+    <h1>Werde ein Teil von NetImmobilien.</h1>
+    <p>Du kannst dich auf eine attraktive Vergütung, einen spannenden und vielseitigen Berufsalltag und ein tolles Team freuen.
+        Sende uns hierfür deine Bewerung an <b>contact@netimmobilien.com</b>, anschließend setzen wir uns mit dir in Verbindung.
+
+    </p>
+    <div class="jobbox" style="background-image:url({% static 'img/markt.jpg'%});background-position:center;background-size:cover;background-repeat:no-repeat;">
+        <!--
+        <div class="jobboxheader">
+            <div class="joba columnname">Jobbezeichnung</div>
+            <div class="jobb columnname">Typ</div>
+            <div class="jobc columnname">Standort</div>
+
+
+        </div>
+        <div class="jobs">
+            <p>Aktuell keine freien Stellen</p>
+
+        </div>
+
+
+    -->
+
+
+    </div>
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}

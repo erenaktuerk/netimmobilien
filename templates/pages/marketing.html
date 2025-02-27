@@ -1,0 +1,248 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/marketing.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Marketing
+{% endblock title%}
+
+{% block content %}
+<div class="top-anker"></div>
+<div class="mheadpic" id="bp372"style="background-image:url({% static 'img/m2.jpg'%})">
+    <div class="filtermheadpic">
+        <h1 id="h1727">Die Kunst der Vermarktung.</h1>
+        <p id="p238">Wir bringen Ihr Unternehmen auf die nächste Stufe.</p>
+        <a  id="a238" href="{% url 'pages:contact'%}" class="prettylinkbutton">Jetzt kontaktieren >></a>
+    </div>
+</div>
+<div class="markgrid1">
+
+    <div class="mtga gridfirstitem gtxtarea" id="mk2">
+        <h1>Marktanalyse.</h1>
+        <p>Bevor wir dein Unternehmensprofil oder Projekt auf dem Markt bewerben, führen wir eine detailierte Marktanalyse durch. Wir filtern Ihre alle relevanten kritischen Punkte Ihrer Branche und Ihres Zielmarktes heraus.</p>
+        <a href="{% url 'pages:marktanalyse'%}" class="prettylinkbutton2">Mehr erfahren >></a>
+
+    </div>
+    <div class="mtgb gridfirstitem" id="mk3" style="background-image:url({% static 'img/m3.jpg'%})"></div>
+    <div class="mtgc gridfirstitem" id="mk4" style="background-image:url({% static 'img/m4.jpg'%})"></div>
+    <div class="mtgd gridfirstitem gtxtarea" id="mk5">
+        <h1>Agile Teams.</h1>
+        <p>Wir arbeiten in kleinen agilen Teams und recherchieren aktiv nach passenden Optionen für Ihr Unternehmen. Sie können sich auf Ihre Kernkompetenzen konzentrieren während wir den Markt und seine Möglichkeiten transparent machen.</p>
+        <a href="{% url 'pages:contact'%}" class="prettylinkbutton2">Kontaktiere uns >></a>
+
+    </div>
+    <div class="mtge gridfirstitem gtxtarea" id="mk6">
+        <h1>Tumuratas Marketing.</h1>
+        <p>Die richtige Objekt- und Markteinschätzung ist die Basis für eine erfolgreiche Vermittlung. 
+            Die marktgerechte Bewertung der Immobilie ist die Grundvoraussetzung eines erfolgreichen Verkaufs bzw. Kauf. Wir verfügen über die dazu notwendigen Kenntnisse und Erfahrung sowie das richtige Gespür für die Marktbedürfnisse.</p>
+        <a href="{% url 'pages:aboutus'%}" class="prettylinkbutton2">Mehr über uns >></a>
+        </div>
+    <div class="mtgf gridfirstitem" id="mk7" style="background-image:url({% static 'img/m5.jpg'%})"></div>
+</div>
+
+<div class="marketingservicebox">
+    <div class="mkgridbox2">
+        <div class="mg1 extraservicbox" id="mg1">
+            <div class="roundpic" style="background-image:url({% static 'img/m6.jpg'%})"></div>
+            <div class="esmtxt">
+                <h2>Standortanalyse</h2>
+                <p>Die Standortanalyse beschäftigt sich mit dem Standort an sich, 
+                    also der Infrastruktur, der soziodemographischen Struktur, den ökonomischen Rahmendbedingungen, dem Immobilienmarkt und sonstigen Rahmenbedingungen.</p>
+            </div>
+        </div>
+        <div class="mg2 extraservicbox" id="mg2">
+            <div class="roundpic" style="background-image:url({% static 'img/m7.jpg'%})"></div>
+            <div class="esmtxt">
+                <h2>Marktanalyse</h2>
+                <p>Bei der Marktanalyse geht es im Wesentlichen um immobilienbezogene Aspekte. Wichtig sind hier vor allem Daten wie das aktuelle Mietniveau, Leerstand bereits vorhandener Immobilien oder Kaufpreisfaktoren.</p>
+
+            </div>
+        </div>
+        <div class="mg3 extraservicbox" id="mg3">
+            <div class="roundpic" style="background-image:url({% static 'img/m1.jpg'%})"></div>
+            <div class="esmtxt">
+                <h2>Produktplanung und Präsentation</h2>
+                <p>Wir designen, entwerfen und schreiben deine nächste Projektpräsentation.</p>
+
+            </div>
+        </div>
+        <div class="mg4 extraservicbox" id="mg4">
+            <div class="roundpic" style="background-image:url({% static 'img/m5.jpg'%})"></div>
+            <div class="esmtxt">
+                <h2>Wettbewerbsanalyse</h2>
+                <p>Analyse deiner Konkurrenz nach systematischen Faktoren. Wir zeigen dir in welchen Bereichen die Potentiale liegen und  wo die Bedrohungen herkommen.</p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+<!--
+<div class="fachead" style="background-image:url({% static 'img/markt.jpg'%})"></div>
+<div class="underhead">
+    <h1>Marketing</h1>
+    <p></p>
+</div>
+
+<div class="faccontent">
+    <h1>Die Kunst der Vermarktung.</h1>
+    <p>Wir arbeiten zielgruppenorientiert, nah am Markt, 
+        am Puls der Zeit und in stetem Austausch mit bewährten, unabhängigen Partnern. Dabei paaren wir langjährige Erfahrung mit visionärem Denken, 
+        Kreativität und kompromissloser Verlässlichkeit.
+
+    </p>
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+
+
+    </div>
+
+</div>
+
+
+ 
+-->
+
+
+{% endblock content %}
+
+{% block javascript %}
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+    toggleActions: "restart none none none",
+    });   
+
+
+    console.log("Willkommen bei der Tumuratas Group.");
+    // This is the YumaBag Text here
+    gsap.from("#h1727", {
+        scrollTrigger: "#h1727",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        y: 100,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+  
+
+    gsap.from("#bp372", {
+        scrollTrigger: "#bp372",
+        toggleActions: "restart none none none",
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+
+    gsap.from("#mk2", {
+        scrollTrigger: "#mk2",
+        toggleActions: "restart none none none",
+        x:200,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+    gsap.from("#mk3", {
+        scrollTrigger: "#mk3",
+        toggleActions: "restart none none none",
+        x:-200,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mk4", {
+        scrollTrigger: "#mk4",
+        toggleActions: "restart none none none",
+        x:-200,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mk5", {
+        scrollTrigger: "#mk5",
+        toggleActions: "restart none none none",
+        x:220,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mk6", {
+        scrollTrigger: "#mk6",
+        toggleActions: "restart none none none",
+        x:-120,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mk7", {
+        scrollTrigger: "#mk7",
+        toggleActions: "restart none none none",
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+
+
+
+    gsap.from("#mg1", {
+        scrollTrigger: "#mg1",
+        toggleActions: "restart none none none",
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mg2", {
+        scrollTrigger: "#mg2",
+        toggleActions: "restart none none none",
+        x:210,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mg3", {
+        scrollTrigger: "#mg3",
+        toggleActions: "restart none none none",
+        x:-210,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+    gsap.from("#mg4", {
+        scrollTrigger: "#mg4",
+        toggleActions: "restart none none none",
+        x:210,
+        duration: 1.3,
+        opacity:0,
+        ease:"ease.in"
+
+    });
+
+
+</script>
+{% endblock javascript %}

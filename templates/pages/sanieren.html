@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Sanierung und Renovierung
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/renovate.jpg'%})"></div>
+<div class="underhead">
+    <h1>Sanierung & Renovierung</h1>
+</div>
+
+<div class="faccontent">
+    <h1>Profitieren Sie von unseren Experten.</h1>
+    <p>Wir bieten Ihnen einen umfassenden Renovierungs- und Sanierungsservice an. Wir gehen jede Renovierung und Sanierung professionell mit voller Mobilisierung an, wobei uns bewusst ist, dass effektiv ausgeführte Aufträge die beste Werbung für ein Renovierungsunternehmen sind. Unsere Kunden kommen zurück, das spricht für uns. Kontaktieren Sie uns für die Einzelheiten.</p>
+</div>
+
+<div class="faccontent">
+    <h1>Worauf Sie achten müssen?</h1>
+    <p>Egal ob Sie ein einzelnes Zimmer, mehrere Räume, die ganze Wohnung oder ein Haus verschönern möchten: Sie müssen zuerst festlegen, in welchem Umfang die Renovieren stattfinden soll. 
+        Hierfür erstellen wir einen ausführlichen Plan von Zielen und Kosten. Sie lege im Vorhinein ein fixes Budget für die gesamte Renovierung fest. 
+        Wir planen daraufhin den benötigten Zeitrahmen für die Umsetzung des Projekts.
+    </p>
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block javascript %}
+
+{% endblock javascript %}

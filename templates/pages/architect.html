@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/projdevelopment.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+
+
+{% endblock cssfile %}
+{% block title %}
+    Architekten und Ingineure - NetImmobilien
+{% endblock title%}
+{% block content %}
+
+
+<div class="projbox1" style="background-image:url({% static 'img/archi.jpeg' %}); margin-bottom:25px">
+    <p id="p8382">NetImmobilien Projectdevelopment</p>
+    <h1 id="gdh237">Wenn Architektur eine Kunst ist, dann sind wir die Künstler.</h1>
+    <a href="{% url 'pages:contact'%}" class="btn whitebtn mrgntop">Jetzt kontaktieren >></a>
+</div>
+
+<div class="projbox2">
+    <h1 id="h37201">Vom Entwurf bis zur Schlüsselübergabe.</h1>
+    <div class="archipicture" id="pic7283" style="background-image:url({% static 'img/housedesigned.png' %})"></div>
+    <p id="p4883">Wir beschäftigen ein erfahrenes und kompetentes Team von Architekten und Bauingenieuren – so können wir Ihnen höchste Qualität zu einem fairen Preis anbieten. 
+        Die gesamte Planung und Gestaltung Ihres Hauses ist in unserem Kompetenz-Paket enthalten. Das bedeutet für Sie, kein zusätzlicher Zeit- und Kostenaufwand für Architekten und Ingenieure.
+    </p>
+
+
+
+
+
+    <div class="faccontent secondfac" id="thirdfac">
+        <h2 style="margin-bottom:20px;">Unsere Leistung.</h2>
+        <div class="rowlist" id="faclist">
+
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Individuelle Grundrissberatung</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Entwurfsplanung</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Anpassung an Ihre persönlichen Bedürfnisse</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Genehmigungsplanung</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Eingabe- sowie Entwässerungspläne</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Ausfertigung von Bauantragsformularen und Anlagen für die Baubehörden</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Werkplanung</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Statische Berechnung</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Energieausweis nach EnEV</div>
+            </div>
+            <div class="horizontalitembox" id="horizontal">
+                <div class="point2">
+                    <div class="innerpointpic"></div>
+                </div>
+                <div class="textpointitem2">Gebäude- und Grundstücksnivellierung einschl. Aufnahme der Kanaltiefen</div>
+            </div>
+           
+        </div>
+        
+    
+    </div>
+    <div class="btnlist marginbottom">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+    
+
+
+
+
+
+
+
+
+</div>
+<div class="projbox3">
+    <div class="symbolitems">
+        <div class="projsymitem">
+            <div class="projsympic" style="background-image:url({% static 'img/architecture2.png' %})"></div>
+            <div class="projsymtxt">Entwurf</div>
+        </div>
+        <div class="projsymitem">
+            <div class="projsympic" style="background-image:url({% static 'img/architecture1.png' %})"></div>
+            <div class="projsymtxt">Umsetzung</div>
+        </div>
+    </div>  
+
+</div>
+
+
+
+{% endblock content %}
+
+{% block javascript %}
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+        ScrollTrigger.defaults({
+        toggleActions: "restart none none none",
+        });   
+
+
+        console.log("Willkommen bei der Tumuratas Group.");
+        // This is the YumaBag Text here
+        gsap.from("#gdh237", {
+            scrollTrigger: ".projbox1",
+            toggleActions: "restart none none none",
+            duration: 0.4,
+            x: -320,
+            opacity:0,
+            ease:"ease.in"
+
+        });
+        gsap.from("#p8382", {
+            scrollTrigger: ".projbox1",
+            toggleActions: "restart none none none",
+            duration: 1,
+            x: 220,
+            opacity:0,
+            ease:"ease.in"
+    
+        });
+        gsap.from("#h37201", {
+            scrollTrigger: ".projbox2",
+            toggleActions: "restart none none none",
+            duration: 1.6,
+            x:-300,
+            opacity:0,
+            ease:"ease.in"
+    
+        });
+
+        gsap.from("#pic7283", {
+            scrollTrigger: ".archipicture",
+            toggleActions: "restart none none none",
+            duration: 1.6,
+            opacity:0,
+            ease:"ease.in"
+    
+        });
+        gsap.from("#p4883", {
+            scrollTrigger: ".archipicture",
+            toggleActions: "restart none none none",
+            duration: 0.6,
+            x:-300,
+            opacity:0,
+            ease:"ease.in"
+    
+        });
+
+       
+
+</script>
+
+{% endblock %}

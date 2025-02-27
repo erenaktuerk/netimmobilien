@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/error.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+404 Error
+{% endblock title%}
+
+
+
+{% block content %}
+<div class="bigerrorcont">
+    <h1>404.</h1>
+    <p>Das tut uns leid. Es gab einen Fehler.</p>
+</div>
+
+
+
+
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+
+{% endblock javascriptblock %}
+

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock cssfile %}
+
+{% block title %}
+Kontakt - NetImmobilien
+{% endblock title%}
+
+
+
+{% block content %}
+
+    <div class="contactbox1">
+        <div class="contactheader">
+            <h1>Kontakt</h1>
+        </div>
+
+        <form method="post" action="{% url 'pages:contact' %}">
+            {% csrf_token %}
+            {% if form %}
+            {% if errors %}
+            <div class="formerrors">
+                {{errors}}
+            </div>
+            {% endif %}
+            <div class="formgrid">
+                <div class="inputfieldcont inpa">
+                    <div class="inputlabel">{{form.topic.label}}</div>
+                    <div class="inputfield">{{form.topic}}</div>
+                </div>
+                <div class="inputfieldcont inpb">
+                    <div class="inputlabel">{{form.firstname.label}}</div>
+                    <div class="inputfield">{{form.firstname}}</div>
+                </div>
+                <div class="inputfieldcont inpc">
+                    <div class="inputlabel">{{form.lastname.label}}</div>
+                    <div class="inputfield">{{form.lastname}}</div>
+                </div>
+                <div class="inputfieldcont inpd">
+                    <div class="inputlabel">{{form.email.label}}</div>
+                    <div class="inputfield">{{form.email}}</div>
+                </div>
+                <div class="inputfieldcont inpf">
+                    <div class="inputlabel">{{form.tel.label}}</div>
+                    <div class="inputfield">{{form.tel}}</div>
+                </div>
+
+                <div class="inputfieldcont inpj">
+                    <div class="inputlabel">{{form.street.label}}</div>
+                    <div class="inputfield">{{form.street}}</div>
+                </div>
+                <div class="inputfieldcont inpk">
+                    <div class="inputlabel">{{form.postialcode.label}}</div>
+                    <div class="inputfield">{{form.postialcode}}</div>
+                </div>
+                <div class="inputfieldcont inpl">
+                    <div class="inputlabel">{{form.city.label}}</div>
+                    <div class="inputfield">{{form.city}}</div>
+                </div>
+
+                <div class="inputfieldcont inpe">
+                    <div class="inputlabel">{{form.message.label}}</div>
+                    <div class="inputfield">{{form.message}}</div>
+                </div>
+                <div id="captcha">
+                    <!--
+                        
+
+                    
+                    -->
+                </div>
+                <div class="inq confirmationbox">
+                        <p> 
+                            Ich bin mit der Verarbeitung meiner Daten zum Zweck der Immobiliensuche durch Tumuratas Group einverstanden. Meine obigen Daten können zum Zweck der Kontaktaufnahme an den örtlich zuständigen Lizenzpartner der NetImmobilien weitergegeben werden. Wenn ich meine Telefonnummer angebe, stimme ich der telefonischen Kontaktaufnahme durch den örtlich zuständigen Lizenzpartner der NetImmobilien zu.
+                            Welche Daten Netimmobilien im Einzelnen speichert und welche Rechte Sie in diesem Zusammenhang haben, erfahren Sie in unseren Datenschutzhinweisen per Klick auf den untenstehenden Link. Sie können Ihre Einwilligungen jederzeit für die Zukunft widerrufen.
+                        </p>
+                </div>
+                <div class="consub" id="btn-box">
+                    <input type="submit" class="tbtn-1 bluebtn" value="Jetzt abschicken"/>
+
+                </div>
+
+
+            </div>
+            {% endif %}
+
+        </form>
+    </div>
+
+
+
+
+
+{% endblock content %}
+
+{% block javascriptblock %}
+{% endblock javascriptblock %}
+

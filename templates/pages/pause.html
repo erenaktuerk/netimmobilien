@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pause.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    {% block cssfile %}
+
+    {% endblock cssfile %}
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+
+    <title>
+        Willkommen bei NetImmobilien
+    </title>
+    <!--<script  src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>-->
+
+</head>
+<body>
+   <div class="containerscreen" style="background-image:url({% static 'img/i1.jpeg'%})">
+       <div class="innercont">
+            <div class="pnavcontainer">
+                <div class="plogo" style="background-image:url({% static 'img/tumurataslogowhite.png'%})"></div>
+            </div>
+            <div class="pausegrid">
+                <div class="pausetxt">
+                    <h1>Wir bauen hier um!</h1>
+                    <p>Dieser Service ist in kürze für dich Verfügbar.</p>
+                </div>
+                <div class="contactbox">
+                    <div class="contitem">
+                        <div class="contsym"></div>
+                        <div class="contvalue">contact@netimmobilien.com</div>
+                    </div>
+                    <!--<div class="contitem">
+                        <div class="contsym"></div>
+                        <div class="contvalue">0611 / 90004570</div>
+                    </div>-->
+                    <div class="adresscont">
+                        <h1>Adresse</h1>
+                        <p>Marktplatz 25</p>
+                        <p>65824 Schwalbach am Taunus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+
+
+    {% block javascript %}
+
+    {% endblock javascript %}
+
+</body>
+
+</html>

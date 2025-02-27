@@ -1,0 +1,474 @@
+{% extends 'base.html' %} {% load static %} {% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+
+{% endblock cssfile %}
+
+{% block title %}
+Home - NetImmobilien
+{% endblock title %}
+
+{% block content %}
+<div class="top-anker"></div>
+
+<div class="initbox" style="background-image: url({% static 'img/i1.jpeg' %})" id="initialbox">
+  <div class="gridhomefirst"id="initTextfieldbox">
+    <div class="inittxtbox gha1" >
+      <h1>Join the network.</h1>
+      <p id="initp">Werde ein Teil unseres Netzwerkes und Vermarkte deine Projekte auf unserer Plattform.</p>
+      <div class="fastlinks">
+        <a href="{% url 'pages:aboutus'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr über uns >></a>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite">Jetzt kontaktieren >></a>
+      </div>
+    </div>
+      
+  </div>
+</div>
+
+<div class="box box23 boxproject" id="secondBoxConnected">
+  <div class="box3inner" id="b12">
+    <div class="headline">Neue  Kontakte, neue Perspektiven</div>
+    <h1>Wir vermitteln global.</h1>
+    <p>Ab dem 20. September können Sie Ihre Immobilien, Bau Projekte und Ihr Unternehmen selbstständig auf unserer Plattform vermarkten und überwachen.</p>
+    <div class="fastlinks">
+      <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite">Jetzt kontaktieren >></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="financeOuter">
+  <div class="financeGridBox">
+    <div class="box3inner financeTextArea" id="b14">
+      <div class="headline" id="headline32">Finanzierungen zu optimalen Konditionen</div>
+      <h1>FINANZIERUNG.</h1>
+      <p id="p3282">Sichern Sie sich Ihren Wunschkredit schnell und einfach zu Topkonditionen. Wir helfen Ihnen gerne dabei.</p>
+      <div class="fastlinks">
+        <a href="{% url 'pages:finance'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr erfahren >></a>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+      </div>
+    </div>
+    <div class="financeImageArea" style="background-image: url({% static 'img/family.jpeg' %})">
+      <!--<div class="imgboxitemtype2" ></div>-->
+    </div>
+  </div>    
+</div>
+
+
+
+<div class="facbox2">
+  <div class="projGrid" >
+
+    <div class="box3inner box3innerCentered projTextArea" id="b15">
+
+      <div class="headline centered">Projektentwicklung</div>
+      <h1 id="projh1">PROJEKTENTWICKLUNG</h1>
+
+      <p>Wir sorgen uns darum, dass Ihr Projekt nicht ins Stocken gerät. Durch ganzheitliche Beratung, Abstimmung der gesetzlichen Aspekte und 
+        zielorientierte Realisierung. Der Blick auf das Ganze zeichnet uns aus.</p>
+      <div class="fastlinks flexcentered">
+        <a href="{% url 'pages:projektanbieten'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr erfahren >></a>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite">Jetzt kontaktieren >></a>
+      </div>
+    </div>
+    <div class="projPic" style="background-image:url({% static 'img/house12.jpeg'%})"></div>
+
+  </div>  
+</div>
+
+
+<div class="consBox" id="consultingBox">
+  <div class="consGridbox">
+    <div class="box3inner txtAreaConsulting" id="b16">
+      <div class="headline" id="headline23">Beratung auf höchstem Niveau</div>
+      <h1>CONSULTING</h1>
+      <p>Wir passen unsere professionellen Leistungen individuell an Ihre Wünsche an und arbeiten mit agilen Projektteams. 
+        Standardlösungen gibt es nicht. Für jede Fragestellung wird individuell mit den passenden Spezialisten eine Lösung gefunden.</p>
+      <div class="fastlinks">
+        <a href="{% url 'pages:consulting'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr erfahren >></a>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+      </div>
+    </div>
+    <div class="picConsulting" style="background-image: url({% static 'img/happy.jpeg' %})"></div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="facbox2" id="facility">
+  <div class="facilitygrid">
+    <div class="box3inner textFacility" id="b17">
+      <div class="headline" id="headline623">Wir pflegen Ihre Immobilien.</div>
+      <h1>FACILITY MANAGEMENT.</h1>
+      <p>Genre übernehmen wir die Verantwortung zur optimalen Pflege Ihrer Immobilie.</p>
+      <div class="fastlinks">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite marginRight40px">Jetzt kontaktieren >></a>
+        <a href="{% url 'pages:career'%}" class="tbtn-1 backgroundBlue">Mehr erfahren >></a>
+      </div>
+    </div>
+    <div class="picFac" style="background-image:url({% static 'img/facilitymanagement.jpg'%})"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="box2" id="servicebox">
+
+  <div class="txtgridarea">
+    <h1 class="regularh1">Unser Service.</h1>
+  </div>
+
+  <div class="gba gsymbox">
+    <div class="symbolservice">
+      <div
+        class="symbolpicture"
+        style="background-image: url({% static 'img/bausym3.png'%})"
+      ></div>
+    </div>
+    <div class="symbolh1">Immobilien</div>
+    <div class="symbolp">
+      Wir liefern dir die Immobilie, die du dir wünschst. Ein wohlfühlendes
+      neues Heim order eine lukrative Wertanlage.
+    </div>
+    <a href="{% url 'properties:properties'%}" class="syma">Erfahre mehr dazu >></a>
+  </div>
+
+
+  <div class="gbb gsymbox">
+    <div class="symbolservice">
+      <div
+        class="symbolpicture"
+        style="background-image: url({% static 'img/buildImmo.png'%})"
+      ></div>
+    </div>
+    <div class="symbolh1">Bau</div>
+    <div class="symbolp">
+      Wir bauen, sanieren und renovieren energieeffizient und nachhaltig.
+    </div>
+    <a href="{% url 'pages:bau'%}" class="syma">Erfahre mehr dazu >></a>
+  </div>
+
+  <div class="gbc gsymbox">
+    <div class="symbolservice">
+      <div
+        class="symbolpicture"
+        style="background-image: url({% static 'img/finanzierung.png'%})"
+      ></div>
+    </div>
+    <div class="symbolh1">Finanzierung</div>
+    <div class="symbolp">
+      Wir liefern Ihnen eine Finanzierung zu unschlagbaren Konditionen.
+    </div>
+    <a href="{% url 'pages:finance'%}" class="syma">Erfahre mehr dazu >></a>
+  </div>
+  <div class="gbd gsymbox">
+    <div class="symbolservice">
+      <div
+        class="symbolpicture"
+        style="background-image: url({% static 'img/projektImo.png'%})"
+      ></div>
+    </div>
+    <div class="symbolh1">Consulting</div>
+    <div class="symbolp">
+      Kompetente Unternehmensberatung für dein Geschäft.
+    </div>
+    <a href="{% url 'pages:consulting'%}" class="syma">Erfahre mehr dazu >></a>
+  </div>
+
+
+  <div class="gbe gsymbox">
+    <div class="symbolservice">
+      <div
+        class="symbolpicture"
+        style="background-image: url({% static 'img/maklerIconFat.png'%})"
+      ></div>
+    </div>
+    <div class="symbolh1">Bewertung</div>
+    <div class="symbolp">
+      Lass deine Immobilie von uns bewerten. Völlig kostenlos und unverbindlich.
+    </div>
+    <a href="{% url 'properties:immobilieanbieten'%}" class="syma">Erfahre mehr dazu >></a>
+  </div>
+
+  <div class="gbf gsymbox">
+    <div class="symbolservice">
+      <div
+        class="symbolpicture"
+        style="background-image: url({% static 'img/bausym2.png'%})"
+      ></div>
+    </div>
+    <div class="symbolh1">Projektentwicklung</div>
+    <div class="symbolp">
+      Wir realisieren deine Projekte. Von der Planung bis zur Umsetzung.
+    </div>
+    <a href="{% url 'pages:architekt'%}" class="syma">Erfahre mehr dazu >></a>
+  </div>
+</div><!-- end of service -->
+<div class="baubox">
+  <div class="baugrid">
+    <div class="box3inner txtAreaBau" id="b13">
+      <div class="headline">Profitieren Sie von unserer Erfahrung.</div>
+
+      <h1>BAU</h1>
+      <p>Unser Anspruch ist höchste Sorgfalt in Sachen Planung, Materialqualität und Kundenservice. 
+        Wir verwenden innovative Technologien, Methoden und Materialien. Auch während der Bauphase steht Ihnen zu jederzeit eine kompetente Beratung zur Verfügung.</p>
+      <div class="fastlinks">
+        <a href="{% url 'pages:bau'%}" class="tbtn-1 backgroundBlue marginRight40px">Mehr erfahren >></a>
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundWhite">Jetzt kontaktieren >></a>
+      </div>
+    </div>
+
+    <div class="picAreaBau" style="background-image: url({% static 'img/bau2.jpg' %})">
+      <!--<div class="imgboxitemtype" id="pic223" style="background-image: url({% static 'img/bau2.jpg' %})"></div>
+      <div class="imgboxitemtype" id="pic213"style="background-image: url({% static 'img/bau3.jpg' %})"></div>-->
+    </div>
+  </div>  
+</div>
+
+<div class="boxcontact">
+  <div class="picturesbox"style="background-image:url({% static 'img/woman1.jpeg' %})">
+    
+  </div>
+  <div class="boxcontact-txt" id="cond32">
+    <h1>Starte deine Karriere bei uns.</h1>
+    <p>
+      Werde ein Teil von unserem Team und erlebe einen spannenden und gut vergüteten Berufsalltag.
+    </p>
+    <a href="{% url 'pages:career'%}" class="tbtn-1 backgroundBlue">Mehr erfahren >></a>
+  </div>
+</div>
+
+
+{% endblock content %} 
+{% block javascript %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+<script>
+
+
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.defaults({
+  toggleActions: "restart none none none",
+  });   
+
+
+  console.log("Willkommen bei NetImmobilien.");
+  // This is the YumaBag Text here
+  gsap.from("#cirbox2", {
+      scrollTrigger: "#cirbox2",
+      toggleActions: "restart none none none",
+      duration: 1.2,
+      x: 220,
+      opacity:0,
+      ease:"ease.in"
+
+  });
+
+  gsap.from("#initialtextbox", {
+    scrollTrigger: "#initialtextbox",
+    toggleActions: "restart none none none",
+    duration: 1.2,
+    delay:1,
+    x: -120,
+    opacity:0,
+    ease:"ease.in"
+
+});
+
+
+gsap.from("#b12 h1", {
+  scrollTrigger: "#b12",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#b13 h1", {
+  scrollTrigger: "#b13",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#b14 h1", {
+  scrollTrigger: "#b14",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#b15 h1", {
+  scrollTrigger: "#b15",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#b16 h1", {
+  scrollTrigger: "#b16",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#b17 h1", {
+  scrollTrigger: "#b17",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+
+gsap.from("#pic3772", {
+  scrollTrigger: "#pic3772",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1,
+  x: 220,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#pic223", {
+  scrollTrigger: "#b13",
+  toggleActions: "restart none none none",
+  duration: 1.4,
+  x: -220,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#pic213", {
+  scrollTrigger: "#b13",
+  toggleActions: "restart none none none",
+  duration: 1.8,
+
+  x: 320,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+
+
+
+
+
+
+
+// now we animate the service stuff
+
+gsap.from(".gba", {
+  scrollTrigger: ".gba",
+  toggleActions: "restart none none none",
+  duration: 1.4,
+  delay:1,
+  x: -320,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from(".gbb", {
+  scrollTrigger: ".gbb",
+  toggleActions: "restart none none none",
+  duration: 1.93,
+  delay:1,
+  x: 420,
+  opacity:0,
+  ease:"ease.in"
+
+});
+gsap.from(".gbc", {
+  scrollTrigger: ".gbc",
+  toggleActions: "restart none none none",
+  duration: 1.6,
+  delay:2,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+gsap.from(".gbd", {
+  scrollTrigger: ".gbd",
+  toggleActions: "restart none none none",
+  duration: 1.2,
+  delay:1.2,
+  x: 120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+gsap.from(".gbe", {
+  scrollTrigger: ".gbe",
+  toggleActions: "restart none none none",
+  duration: 1,
+  delay:2,
+  x: -120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+gsap.from(".gbf", {
+  scrollTrigger: ".gbf",
+  toggleActions: "restart none none none",
+  duration: 1.7,
+  delay:0.4,
+  x: 160,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+gsap.from("#cond32", {
+  scrollTrigger: "#cond32",
+  toggleActions: "restart none none none",
+  duration: 1.8,
+  delay:1,
+  x: 120,
+  opacity:0,
+  ease:"ease.in"
+
+});
+
+
+</script>
+
+
+{% endblock javascript %}

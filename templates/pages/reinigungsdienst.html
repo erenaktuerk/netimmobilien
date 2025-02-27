@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/winterdienst.css' %}">{% endblock cssfile %}
+
+{% block title %}
+Reinigungsdienst - Tumuratas Group
+{% endblock title%}
+
+{% block content %}
+    <div class="fachead" style="background-image:url({% static 'img/hausmeister.jpeg'%})"></div>
+    <div class="underhead">
+        <h1>Reinigungsdienst</h1>
+    </div>
+
+    <div class="faccontent winterf1" id="rd1">
+        <h1>Kompetent und zuverlässig.</h1>
+        <h3 class="bolded">Der Reinigungsservice zum Top-Preis.</h3>
+        <div class="txtfac">bietet Ihnen sorgfältige und zuverlässige Büroreinigung und Gebäudereinigung in Wiesbaden und Umgebung
+            Als Dienstleister im Bereich der Unterhaltsreinigung möchten wir Ihnen den Weg zu sauberen Räumlichkeiten mit der Büroreinigung Wiesbaden aufzeigen.
+            Dafür bietet Ihnen der Tumuratas Group Reinigungsservice ein umfangreiches Angebot an Dienstleistungen für die Sauberkeit von Büros und Gebäuden an.</br></br>
+            Informieren Sie sich und kontaktieren Sie uns gerne zum Thema Büroreinigung Wiesbaden. Wie bearbeiten Ihre Fragen umgehend und bieten Ihnen eine ausführliche Beratung.
+            Sobald wir Ihre Anfrage für einen Bereich den wir als Reinigungsfirma behandeln sollen, erhalten haben, senden wir Ihnen ein sofortiges Angebot oder vereinbaren einen gemeinsamen Besichtigungsterm. Dort besprechen wir alle Details zum Reinigungsumfang und eventuelle Sonderreinigungen wie die Treppenhausreinigung, die Glasreinigung oder die umfangreiche Grundreinigung.
+        </br></br>Wenn wir einen gemeinsamen Beginn der Reinigung festgelegt haben, besuchen wir Sie mit der für Sie zuständigen Reinigungskraft und dem Objektleiter und starten mit unserer Arbeit.
+            Wir möchten Ihnen immer eine feste Reinigungskraft zur Verfügung stellen, damit man sich nicht immer auf neue Personen einstellen muss. In festen Intervallen kontrollieren wir die Reinigungsleistung in Ihren Räumlichkeiten und können uns jederzeit auf Sonderwünsche einstellen.
+        </div>
+    </div>
+    <div class="faccontent winterf1" id="rd2">
+        <h3 class="bolded">Die Corona-Krise führt zu erheblichen Änderungen in unserem Alltag.</h3>
+        <div class="txtfac">
+            Im privaten wie im beruflichen Umfeld sind besondere Hygienemaßnahmen von großer Wichtigkeit, um die weitere Ausbreitung des Virus möglichst zu verhindern. Hierbei kann die Büro Desinfektion helfen, da der Büroarbeitsplatz in einer Sonderreinigung umfangreich desinfiziert wird. Wir bieten die saubere Büro Desinfektion an und erläutern Ihnen den genauen Ablauf und Leistungsumfang.</br></br>
+            Gerne erstellen wir Ihnen einen individuellen Reinigungsplan entsprechend der Nutzungsbedingungen in Ihrem Unternehmen.
+        </div>
+    </div>
+    
+
+
+{% endblock content %}
+
+{% block javascript %}
+
+{% endblock javascript %}

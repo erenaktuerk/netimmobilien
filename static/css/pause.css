@@ -1,0 +1,132 @@
+
+.containerscreen{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+
+}
+
+.pausegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 380px 380px;
+    grid-template-areas: 
+    "pa pb"
+    "pa pb";
+    height: auto;
+    
+}
+
+
+
+.pnavcontainer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.plogo{
+    margin-left: 20px;
+    height: 55px;
+    width: 280px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.innercont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-color: rgba(0,0,0,0.8);
+}
+
+.pausetxt h1{
+    font-size: 3.2em;
+    max-width: 500px;
+    line-height: 0.9em;
+    margin-left: 40px;
+    margin-bottom: 25px;
+
+}
+
+.pausetxt p{
+    max-width: 500px;
+    font-size: 1.2em;
+    margin-left: 40px;
+}
+
+.pausetxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contactbox{
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 12px;
+
+}
+
+.adresscont{
+    margin-top: 30px;
+    text-align: center;
+}
+.adresscont h1{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.contitem{
+    margin-bottom: 10px;
+}
+
+
+@media(max-width:880px){
+    .pausegrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 380px 380px;
+        grid-template-areas: 
+        "pa"
+        "pa";
+        
+    }
+
+    .pausetxt{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pausetxt h1{
+        font-size: 2em;
+    }
+
+    .pausetxt p{
+        font-size: 1em;
+    }
+
+    .adresscont h1{
+        font-size: 1.2em;
+    }
+
+    .adresscont p{
+        font-size: 0.9em;
+        margin-bottom: 6px;
+
+    }
+}

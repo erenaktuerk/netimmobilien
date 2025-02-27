@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/pagesbasic.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/consulting.css' %}">
+
+{% endblock cssfile %}
+{% block title %}
+    Consulting - NetImmobilien
+{% endblock title%}
+{% block content %}
+
+<div class="consultgrid">
+    <div class="csa">
+        <h1 id="h3292">Erste Klasse Beratung.</h1>
+    </div>
+    <div class="csb" style="background-image:url({% static 'img/happy.jpeg'%})"></div>
+    <div class="csc">
+        <p id="p36367">Ein gutes Investment basiert auf Marktkenntnis und erfolgsorientierter Entscheidungsfindung. 
+            Wir sind Ihr Immobilienberater, der Sie bei der Vermarktung, der Suche und Entwicklung 
+            Ihres Investments als auch in der Bewirtschaftung umfassend begleitet.
+        </p>
+        <a href="{% url 'pages:contact'%}" class="btn bluebtn">Jetzt kontaktieren >></a>
+    </div>
+</div>
+
+<div class="consultbox2">
+    <div class="c2txt">
+        <h1 id="h29101">Was wir bieten.</h1>
+        <p id="p10292">Unsere professionelle Dienstleistung umfasst das vollständige Spektrum des Corporate Real Estate Managements entlang 
+            der gesamten Wertschöpfungskette einer Unternehmensimmobilie. Je nach Bedarf des Kunden erbringen wir einzelne, mehrere 
+            oder sämtliche Leistungsbausteine aus diesem Spektrum.</p>
+        <a href="#" class="btn bluebtn mrgntop">Jetzt kontaktieren >></a>
+    </div>
+    <div class="c2sym">
+        <div class="c2symitem" id="pic82203">
+            <div class="c2sympic" style="background-image:url({% static 'img/consulting1.png' %})"></div>
+            <div class="c2symtxt">Transparente Konditionen.</div>
+        </div>
+
+        <div class="c2symitem" id="pic02293">
+            <div class="c2sympic" style="background-image:url({% static 'img/consulting2.png' %})"></div>
+            <div class="c2symtxt">Optimierung deiner Entscheidungen.</div>
+        </div>
+        <div class="c2symitem" id="pic900300">
+            <div class="c2sympic" style="background-image:url({% static 'img/consulting3.png' %})"></div>
+            <div class="c2symtxt">Skalierung deines Geschäfts.</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="consultbox3">
+    <div class="cb3txt">
+        <div class="smallub">Ihre Strategie zum Besseren.</div>
+        <h1>Professionell und individuell.</h1>
+        <p id="p372">
+            Wir legen Wert auf passgenaue Leistungen. Dafür analysieren wir für jeden Kunden genau, mit welchem Team und mit welchen Leistungen wir seinen Auftrag bestmöglich erfüllen. 
+            Wir untersuchen die Ausgangslage des Kunden und sein Ziel. Der Weg zum Ziel ist unser Auftrag, für jeden Kunden passen wir unsere professionellen Leistungen individuell an.
+
+        </p>
+    </div>
+
+    <div class="cb3list">
+        <div class="listitem">
+
+            <div class="lisym" >
+                <div class="innerlistsym" style="background-image:url({% static 'img/hakensym.png'%})"></div>
+            </div>
+            <div class="listtxt">
+                Strategieentwicklung.
+            </div>
+
+        </div>
+        <div class="listitem">
+            <div class="lisym" >
+                <div class="innerlistsym" style="background-image:url({% static 'img/hakensym.png'%})"></div>
+            </div>
+            <div class="listtxt">
+                Konfliktanalyse.
+            </div>
+        </div>
+        <div class="listitem">
+            <div class="lisym" >
+                <div class="innerlistsym" style="background-image:url({% static 'img/hakensym.png'%})"></div>
+            </div>
+            <div class="listtxt">
+                Zielorientiert.
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block javascript %}
+<script>
+
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+    toggleActions: "restart none none none",
+    });   
+
+    // This is the YumaBag Text here
+    gsap.from("#h3292", {
+        scrollTrigger: ".csa",
+        toggleActions: "restart none none none",
+        duration: .7,
+        delay:0.6,
+        x: -320,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#p36367", {
+        scrollTrigger: ".csc",
+        toggleActions: "restart none none none",
+        duration: .7,
+        x: 320,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#h29101", {
+        scrollTrigger: ".c2txt",
+        toggleActions: "restart none none none",
+        duration: .9,
+        x: 220,
+        opacity:0,
+        ease:"ease.in"
+    });
+    gsap.from("#p10292", {
+        scrollTrigger: ".c2txt",
+        toggleActions: "restart none none none",
+        duration: .7,
+        x: -420,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#pic82203", {
+        scrollTrigger: ".c2txt",
+        toggleActions: "restart none none none",
+        duration: .9,
+        x: 220,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#pic02293", {
+        scrollTrigger: ".c2txt",
+        toggleActions: "restart none none none",
+        duration: .9,
+        x: 220,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#pic900300", {
+        scrollTrigger: ".c2txt",
+        toggleActions: "restart none none none",
+        duration: .9,
+        x: -220,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+
+    
+
+
+
+</script>
+{% endblock javascript %}
+

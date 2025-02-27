@@ -1,0 +1,426 @@
+.videosection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
+
+.video-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
+
+.aboutgridcontainer {
+    display: grid;
+    height: auto;
+    margin-top: 77px;
+    margin-bottom: 10px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 380px auto 300px 300px;
+    grid-template-areas:
+        "abd abc"
+        "abi abc"
+        "abb abb"
+        "aba abf"
+        "aba abg";
+
+}
+
+.about_i {
+    grid-area: abi;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.about_i p {
+    font-size: 1.4em;
+    font-weight: 500;
+    max-width: 490px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.picmargin {
+    margin: 5px;
+}
+
+.about_i h1 {
+    font-weight: 800;
+    height: auto;
+    font-size: 3.8em;
+    line-height: 0.9em;
+    max-width: 480px;
+    text-align: center;
+    background: -webkit-linear-gradient(120deg, #0094D6, #00528E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.abpic {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_a {
+    grid-area: aba;
+}
+
+.about_d h1 {
+    background: -webkit-linear-gradient(20deg, #0094D6, #00528E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    line-height: 0.9em;
+    max-width: 450px;
+    text-align: center;
+    padding-bottom: 10px;
+    ;
+
+}
+
+.about_b {
+    grid-area: abb;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.about_b h1 {
+    font-size: 4em;
+    max-width: 490px;
+    line-height: 0.9em;
+    text-align: center;
+    margin-bottom: 35px;
+    background: -webkit-linear-gradient(20deg, #0094D6, #00528E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_b p {
+    max-width: 620px;
+    width: 80%;
+    text-align: start;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 35px;
+    font-weight: 500;
+
+}
+
+.about_c {
+    grid-area: abc;
+    margin: 5px;
+}
+
+.about_d {
+    grid-area: abd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.about_e {
+    grid-area: abe;
+}
+
+.about_f {
+    grid-area: abf;
+}
+
+.about_h {
+    grid-area: abh;
+}
+
+.about_g {
+    grid-area: abg;
+}
+
+.aboutusbox2 {
+    height: auto;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px 230px;
+    grid-template-areas:
+        "ba bb"
+        "ba bb";
+}
+
+.box-aba {
+    grid-area: ba;
+    margin: 20px;
+
+}
+
+#h723 h1 {
+    background: -webkit-linear-gradient(20deg, #0094D6, #00528E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+
+}
+
+#h723 p {
+    max-width: 560px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.bonsi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.box-abb {
+    grid-area: bb;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutusbox2 h1 {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.abpic:hover {
+    background-blend-mode: difference;
+    transition: 340ms all ease-in;
+    cursor: pointer;
+}
+
+
+
+.bonsib {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bonsiitem {
+    background-color: white;
+    width: 420px;
+    height: 110px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 6px #bababa;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+
+
+.bonsiitem h1 {
+    font-size: 0.8em;
+    margin-left: 20px;
+    font-weight: 600;
+
+}
+
+
+.bonsiitem p {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+
+
+
+
+@media(max-width:1080px) {
+
+
+    .aboutusbox2 {
+        height: auto;
+        width: 90%;
+
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "ba"
+            "bb";
+    }
+
+    .box-aba {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .about_d h1 {
+        font-size: 2.7em;
+        line-height: 0.9em;
+        margin-bottom: 10px;
+
+    }
+
+    .about_i p {
+        font-size: 1.1em;
+        margin-left: 35px;
+        margin-right: 35px;
+
+
+    }
+
+    .box-aba p {
+        font-size: 1.1em;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:980px) {
+
+    .aboutgridcontainer {
+        display: grid;
+        height: auto;
+        margin-top: 117px;
+        margin-bottom: 10px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90px 380px 200px auto 300px 300px;
+        grid-template-areas:
+            "abd abd"
+            "abc abc"
+            "abi abi"
+            "abb abb"
+            "abg abg"
+            "aba abf";
+
+    }
+
+    .about_i h1 {
+        font-size: 1.8em;
+
+    }
+
+    #hu383{
+        font-size: 1.8em;
+    }
+
+
+    .about_b h1 {
+        font-size: 1.7em;
+        max-width: 85%;
+
+
+    }
+
+    .about_b p {
+        font-size: 1.1em;
+        max-width: 85%;
+
+    }
+
+
+    #h723 h1 {
+        font-size: 1.7em;
+    }
+
+    #h723 p {
+        font-size: 1.1em;
+    }
+
+
+
+
+
+
+
+    .box-abb {
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+    }
+
+
+    .box-aba {
+        grid-area: ba;
+        border-right: 0px solid #eaeaea;
+        border-bottom: 0px solid #eaeaea;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 25px;
+        margin-bottom: 50px;
+        margin-top: 0px;
+
+    }
+
+
+    .box-abb {
+        grid-area: bb;
+        margin-left: 0px;
+        padding-bottom: 30px;
+
+    }
+
+}
+
+@media(max-width:760px) {
+
+    .about_b p {
+
+        font-size: 1em;
+    }
+
+    #h723 {
+        font-size: 1em;
+    }
+
+
+
+}

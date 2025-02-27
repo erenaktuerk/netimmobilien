@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+
+{% endblock cssfile %}
+
+{% block title %}
+Facility Management
+{% endblock title%}
+
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/facilitymanagement.jpeg'%})"></div>
+<div class="underhead">
+    <h1>Facility Management</h1>
+</div>
+
+<div class="faccontent">
+    <h1 id="h35222">Wir verwalten und pflegen Ihr Gebäude.</h1>
+    <p id="p27371">Jede Immobilie benötigt ein Maß an Verwaltung und Pflege. Dazu gehört die Gebäudereinigung, Hausmeisterservice 
+        aber auch alles rund um das Thema Brandschutz. Wir von der Tumuratas Group sind Experten in diesem Bereich und 
+        kümmern uns sehr gerne um die kleinen und großen Angelegenheit rund um deine Immobilie.
+    </p>
+    <div class="facboxpic" id="pic62718" style="background-image:url({% static 'img/fm3.jpg'%})">
+    </div>
+
+</div>
+
+<div class="faccontent secondfac" id="secondfac">
+    <h2>Unsere Aufgaben.</h2>
+    <div>
+
+        <div class="spontangrid">
+            <div class="gridpart-a">
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Mietmanagement</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Sicherheit und Arbeitsschutz</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Flächenmanagement</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Budgetmanagement</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Schließanlagenmanagement</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Reinigungsmanagement</div>
+                </div>
+            </div>
+            <div class="gridpart-b">
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Instandhaltungsmanagement</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Umzugsmanagement</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Energiecontrolling</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Betriebsabrechnungen</div>
+                </div>
+                <div class="horizontalitembox" id="horizontal">
+                    <div class="point2">
+                        <div class="innerpointpic"></div>
+                    </div>
+                    <div class="textpointitem2">Inventarmanagement</div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Mietmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Sicherheit und Arbeitsschutz</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Flächenmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Budgetmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Schließanlagenmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Reinigungsmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Instandhaltungsmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Umzugsmanagement</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Energiecontrolling</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Betriebsabrechnungen</div>
+        </div>
+        <div class="horizontalitembox" id="horizontal">
+            <div class="point2">
+                <div class="innerpointpic"></div>
+            </div>
+            <div class="textpointitem2">Inventarmanagement</div>
+        </div>
+
+    -->
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="btnlist">
+        <a href="{% url 'pages:contact'%}" class="tbtn-1 backgroundBlack">Jetzt kontaktieren >></a>
+    </div>
+
+</div>
+
+
+ 
+
+
+
+{% endblock content %}
+
+{% block javascript %}
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.defaults({
+    toggleActions: "restart none none none",
+    });   
+  
+  
+    console.log("Willkommen bei der Tumuratas Group.");
+    // This is the YumaBag Text here
+    gsap.from("#h35222", {
+        scrollTrigger: ".faccontent",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: 220,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#p27371", {
+        scrollTrigger: ".faccontent",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: -220,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+    gsap.from("#pic62718", {
+        scrollTrigger: ".facboxpic",
+        toggleActions: "restart none none none",
+        duration: 1.2,
+        x: 220,
+        opacity:0,
+        ease:"ease.in"
+    });
+
+</script>
+
+{% endblock javascript %}
+

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cssfile %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/facilitymanagement.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/story.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/winterdienst.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ratenkredit.css' %}">
+
+
+
+{% endblock cssfile %}
+
+{% block title %}
+Immobilienverrentung - Tumuratas Group
+{% endblock title%}
+{% block content %}
+<div class="fachead" style="background-image:url({% static 'img/buildings.jpg'%})"></div>
+<div class="underhead">
+    <h1>Ratenkredit</h1>
+</div>
+<div class="faccontent winterf1">
+    <h3>Sie sind auf der Suche nach einer unabhängigen Finanzberatung? Dann sind Sie bei Tumuratas Group genau richtig.</h3>
+    <div class="txtfac">
+        Unserer Finanzberater und Finanzberaterinnen helfen Ihnen bei all Ihren Finanzfragen. Egal ob es um die Altersvorsorge, den Vermögensaufbau (Geldanlage), Versicherungen oder die Finanzierung der eigenen Immobilie geht. In unserer Beratung verfolgen wir einen ganzheitlichen, transparenten und unabhängigen Ansatz. Wir beraten nach objektiven, nachprüfbaren und wissenschaftlichen Kriterien.
+    </div>
+</div>
+
+<div class="faccontent winterf1">
+    <h3>So arbeiten wir!</h3>
+    <div class="txtfac">
+        Mit unserem Team von Finanzierungsexperten bieten wir Ihnen umfassende Beratung zur Finanzierung und finden aus über 500 Darlehensgebern und staatlichen Fördermitteln die maßgeschneiderten Angebote zu günstigen Konditionen, die optimal zu Ihnen passen. Dabei ist dieser Service für Sie ganz unverbindlich und kostet Sie auch keinen Cent extra.</br></br>
+        Ein persönliches Gespräch mit einem Finanzierungsspezialisten in unserer Niederlassung eignet sich bestens für die Planung und Optimierung Ihrer Finanzierung. Vereinbaren Sie hierzu einfach einen Beratungstermin - wir melden uns umgehend bei Ihnen und stimmen einen gemeinsamen Termin ab.
+    </div>
+</div>
+
+
+
+{% endblock content %}
+
+{% block javascript %}
+
+{% endblock javascript %}
